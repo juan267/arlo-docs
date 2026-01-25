@@ -1,0 +1,96 @@
+---
+title: Arlo Documentation
+description: Complete documentation for the Arlo farm sanitation management platform.
+template: splash
+hero:
+  tagline: Your complete guide to managing farm sanitation inspections, monitoring, and reporting.
+  image:
+    file: ../../../assets/logo.svg
+  actions:
+    - text: Get Started
+      link: /en/sanitation/monitors/
+      icon: right-arrow
+    - text: View Forms Guide
+      link: /en/sanitation/forms/guide/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+## Sanitation Module
+
+The Sanitation module helps you systematically monitor pests, diseases, and crop health across your farm with offline-capable data collection and powerful analytics.
+
+### Setup & Configuration
+
+<CardGrid>
+  <Card title="Monitors" icon="star">
+    Register and manage the field workers responsible for performing
+    inspections. Track accountability and assign routes to specific people.
+    [Learn more →](/en/sanitation/monitors/)
+  </Card>
+  <Card title="Forms" icon="document">
+    Create custom inspection forms with flexible sampling modes, tree sections,
+    and custom fields. Use AI to help build forms based on best practices.
+    [Learn more →](/en/sanitation/forms/guide/)
+  </Card>
+</CardGrid>
+
+### Field Work
+
+<CardGrid>
+  <Card title="Calendar" icon="seti:clock">
+    Schedule, track, and manage all your sanitation inspections with a visual
+    timeline. Monitor route statuses and identify overdue work. [Learn more
+    →](/en/sanitation/calendar/)
+  </Card>
+  <Card title="Route Launcher" icon="rocket">
+    Start and manage field inspections with offline-first capabilities. Download
+    forms before heading to the field and sync data when back online. [Learn
+    more →](/en/sanitation/launcher/)
+  </Card>
+  <Card title="Field Data Entry" icon="pencil">
+    Mobile-optimized forms for collecting sanitation data in the field. GPS
+    tracking, offline support, and intuitive navigation. [Learn more
+    →](/en/sanitation/data-entry/)
+  </Card>
+</CardGrid>
+
+### Reports & Analysis
+
+<CardGrid>
+  <Card title="Route Analysis" icon="list-format">
+    Review individual route results with detailed findings, GPS maps, and photo
+    galleries. [Learn more →](/en/sanitation/route-analysis/)
+  </Card>
+  <Card title="Map Reports" icon="magnifier">
+    Visualize your inspection data spatially with interactive maps showing pest
+    hotspots and coverage. [Learn more →](/en/sanitation/reports/map-reports/)
+  </Card>
+  <Card title="Analytical Reports" icon="puzzle">
+    Deep dive into your data with advanced charts, operation metrics, coverage
+    matrices, and AI-powered insights. [Learn more
+    →](/en/sanitation/reports/analytical-reports/)
+  </Card>
+</CardGrid>
+
+## Quick Links
+
+<CardGrid>
+  <LinkCard
+    title="Custom Fields"
+    href="/en/sanitation/forms/custom-fields/"
+    description="Learn how to add numbers, checkboxes, photos, and more to your forms."
+  />
+  <LinkCard
+    title="Alerts & Thresholds"
+    href="/en/sanitation/forms/alerts/"
+    description="Configure automatic alerts when pest levels exceed your thresholds."
+  />
+  <LinkCard
+    title="Assessment Guide"
+    href="/en/sanitation/reports/assessment-guide/"
+    description="Best practices for evaluating your sanitation data."
+  />
+</CardGrid>
