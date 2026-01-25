@@ -3,9 +3,12 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightThemeRapide from "starlight-theme-rapide";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://docs.arloagro.com",
+
   integrations: [
     starlight({
       favicon: "favicon.ico",
@@ -81,4 +84,6 @@ export default defineConfig({
       ],
     }),
   ],
+
+  adapter: netlify(),
 });
