@@ -86,8 +86,43 @@ export default defineConfig({
           items: [
             { label: "Contratistas", slug: "field-tasks/contractors" },
             { label: "Labores de Campo", slug: "field-tasks/tasks" },
-            { label: "Ciclos de Labor", slug: "field-tasks/cycles" },
+            { label: "Ciclos de Campo", slug: "field-tasks/cycles" },
             { label: "Guía de Gestión", slug: "field-tasks/guides" },
+          ],
+        },
+        {
+          label: "Insumos",
+          items: [
+            { label: "Configuración", slug: "supplies/configuration" },
+            { label: "Proveedores", slug: "supplies/providers" },
+            { label: "Catálogo de Insumos", slug: "supplies/catalog" },
+            { label: "Entradas de Inventario", slug: "supplies/entries" },
+            { label: "Salidas de Inventario", slug: "supplies/exits" },
+            {
+              label: "Reequilibrio de Inventario",
+              slug: "supplies/rebalancing",
+            },
+            { label: "Guía y Reportes", slug: "supplies/guide" },
+          ],
+        },
+        {
+          label: "Cosecha",
+          items: [
+            { label: "Vehículos", slug: "harvest/vehicles" },
+            { label: "Unidades de Cosecha", slug: "harvest/units" },
+            { label: "Grupos de Cosecha", slug: "harvest/groups" },
+            { label: "Entradas de Cosecha", slug: "harvest/entries" },
+            { label: "Ciclos de Cosecha", slug: "harvest/cycles" },
+            { label: "Guía y Reportes", slug: "harvest/guide" },
+          ],
+        },
+        {
+          label: "Remisiones",
+          items: [
+            { label: "Configuración", slug: "statements/configuration" },
+            { label: "Clientes", slug: "statements/clients" },
+            { label: "Listado de Remisiones", slug: "statements/list" },
+            { label: "Guía de Creación", slug: "statements/guide" },
           ],
         },
       ],

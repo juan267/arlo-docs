@@ -11,11 +11,20 @@ description: Define and standardize the work performed on your farm for accurate
 
 Navigate to **Farm → Field Tasks** and click **Add Field Task**.
 
+:::important[Create Once, Use Forever]
+Field tasks are designed to be created **only once**. Once you have defined a task (e.g., "Pruning"), you can reuse it in as many **Field Cycles** as needed over the years. You don't need to create a new task for every cycle or every month; simply select it from the list when planning your cycle.
+:::
+
 ### Field Meanings
 
 - **Name:** A descriptive name for the task (e.g., "Guadaña de Calles").
 - **Code:** A unique shorthand identifier (e.g., "GUA-01"). This is used for quick searching and bulk uploads.
 - **Default Price:** The standard amount paid to a contractor per unit of this task. The currency follows your farm's configuration.
+
+:::caution[Price Updates]
+If you update the **Default Price** of a task, the system will automatically recalculate the budgeted and actual costs for all **active or future Field Cycles**. Cycles that have already ended will retain their original costs to protect your historical records.
+:::
+
 - **Task Unit:** The metric used to measure progress. Common examples include _Tree_, _Palm_, _Lot_, or _Meter_.
 - **Description:** Additional context about the task's requirements or standards.
 
@@ -41,33 +50,33 @@ Consider "Manejo de Malezas" (Weeding). Instead of one task, create:
 
 ---
 
-## 3. Units: Consumption vs. Buying
+## 3. Bulk Uploads and Updates
 
-Understanding how the system handles units is key to accurate inventory and cost analysis.
+For farms with a large volume of data, the **Bulk Upload** tool is the most efficient way to manage your task catalog. You can find this option via the **Bulk Upload** button on the Field Tasks index.
 
-### Buying Unit (Stock)
+### How the Process Works
 
-This is how you **purchase** supplies from providers (e.g., a _20L Jug_ of Herbicide or a _50kg Bag_ of Fertilizer). Your inventory is tracked in these units.
+1.  **Download the Template:** Click **Download Template (.xlsx)**. The system generates a smart file that includes:
+    - **Existing Tasks:** Your current catalog as sample data so you can simply edit them.
+    - **Data Validations:** Dropdowns for columns like "Task Unit" to prevent typing errors.
+    - **Instructions Sheet:** Details on the expected format for each column.
+2.  **Prepare the Data:** Fill in or edit the information in the Excel file.
+3.  **Upload the File:** Drag and drop your file into the upload area.
 
-### Consumption Unit (Application)
+### Bulk Updates (e.g., Yearly Price Adjustments)
 
-This is how you **apply** the supply in the field (e.g., _Milliliters_ per tree or _Grams_ per plant).
+The system uses the **Code** of the task to identify whether to create a new record or update an existing one.
 
-### Field Task Unit (Execution)
+- **If the code already exists:** The system will update the name, description, and price of that task. This is ideal for **yearly price adjustments**: download the template with current prices, update them in Excel, and re-upload.
+- **If the code is new:** A new field task will be created.
 
-This is the work metric (e.g., _Trees_ pruned or _Meters_ weeded).
+### Notifications and Error Reports
 
-### WAVCO (Weighted Average Cost)
+Once the file is processed, you will receive an **email** with a summary of the results:
 
-The system uses **WAVCO** to translate your Buying Unit price into a Consumption Unit cost.
-_Example:_ If you buy a 50kg bag for $100, and a Field Task consumes 500g per tree, the system automatically calculates the cost per tree as $1. This ensures that your **Actual Cost** in a labor cycle reflects the real value of the supplies used.
+- **Success:** How many tasks were created and how many were updated.
+- **Errors:** If there were any issues (e.g., an invalid unit or a database error), the email will include an **Excel Error Report**. This report tells you exactly which row failed and why, so you can fix and re-upload only the corrected rows.
 
----
-
-## 4. Bulk Uploads
-
-If you have a long list of tasks, use the **Bulk Upload** feature on the Field Tasks index.
-
-1.  Download the template.
-2.  Fill in the `code`, `name`, `default_price`, and `field_task_unit`.
-3.  Upload to create or update multiple tasks at once.
+:::tip[Efficiency]
+Use bulk upload not just for initial setup, but as your primary maintenance tool to keep your labor costs updated year after year.
+:::

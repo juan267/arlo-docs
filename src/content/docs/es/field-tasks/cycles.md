@@ -1,9 +1,9 @@
 ---
-title: Ciclos de Labor
+title: Ciclos de Campo
 description: Domina la gestión de los ciclos de trabajo, desde la planificación y el presupuesto hasta la ejecución y el análisis final de costos.
 ---
 
-Los **Ciclos de Labor** son el núcleo de la planificación operativa. Te permiten agrupar múltiples labores de campo durante una ventana de tiempo específica, asignarlas a contratistas y lotes, y rastrear su progreso físico y financiero.
+Los **Ciclos de Campo** son el núcleo de la planificación operativa. Te permiten agrupar múltiples labores de campo durante una ventana de tiempo específica, asignarlas a contratistas y lotes, y rastrear su progreso físico y financiero.
 
 ---
 
@@ -19,13 +19,13 @@ Cada finca tiene un ritmo preferido para gestionar y pagar el trabajo. Puedes co
 
 ---
 
-## 2. Planificar el Ciclo (Items de Línea)
+## 2. Planificar el Ciclo (Labores)
 
-Una vez creado un ciclo, agregas trabajos específicos utilizando los **Items de Ciclo de Labor**.
+Una vez creado un ciclo, agregas trabajos específicos utilizando las **Labores**.
 
-### Crear Items de Línea
+### Crear Labores
 
-En la página de detalles del Ciclo de Labor, haz clic en **Agregar Labor al Ciclo**. Para cada item, defines:
+En la página de detalles del Ciclo de Campo, haz clic en **Agregar Labor al Ciclo**. Para cada labor, defines:
 
 - **Contratista:** ¿Quién es el responsable?
 - **Labor de Campo:** ¿Cuál es el trabajo específico (ej. Poda)?
@@ -44,15 +44,15 @@ En la página de detalles del Ciclo de Labor, haz clic en **Agregar Labor al Cic
 
 A medida que el trabajo se completa en el campo, lo registras usando **Logs**.
 
-- **Agregar un Log:** Haz clic en un item de línea para agregar las unidades completadas, la fecha del trabajo y notas opcionales.
-- **Porcentaje de Progreso:** El sistema actualiza automáticamente el progreso (ej. si presupuestaste 100 árboles y registras 50, el item pasa al 50% de progreso).
-- **Registro de Cambios:** Cada cambio en una programación o log es rastreado. Puedes ver cuándo se inició un item, cuándo llegó al 100% y quién modificó el registro.
+- **Agregar un Log:** Haz clic en una labor para agregar las unidades completadas, la fecha del trabajo y notas opcionales.
+- **Porcentaje de Progreso:** El sistema actualiza automáticamente el progreso (ej. si presupuestaste 100 árboles y registras 50, la labor pasa al 50% de progreso).
+- **Registro de Cambios:** Cada cambio en una programación o log es rastreado. Puedes ver cuándo se inició una labor, cuándo llegó al 100% y quién modificó el registro.
 
 ---
 
 ## 4. Ciclo de Vida de los Estados
 
-Los items de línea pasan por varios estados, indicados por colores:
+Las labores pasan por varios estados, indicados por colores:
 
 - **⚪ Pendiente:** No programado y no iniciado.
 - **🔵 Programado:** Planeado para una fecha futura.
@@ -73,5 +73,5 @@ La **Página de Detalle del Ciclo** ofrece varias herramientas de gestión:
   - **PDF ZIP:** Genera "Órdenes de Servicio" o "Resúmenes de Pago" individuales para cada contratista en un solo archivo ZIP. Úsalos como registros formales para tu departamento de contabilidad.
 
 :::tip[Consejo Profesional]
-Puedes mover el trabajo programado directamente en el calendario editando el item de línea. Esto te ayuda a reequilibrar la carga de trabajo si un contratista se está quedando atrás.
+Puedes mover el trabajo programado directamente en el calendario editando la labor. Esto te ayuda a reequilibrar la carga de trabajo si un contratista se está quedando atrás.
 :::

@@ -19,12 +19,12 @@ Antes de comenzar, asegúrate de que tus **Labores de Campo** estén debidamente
 - _Usa:_ "Limpieza de Drenajes", "Reparación de Cercas" y "Plateo".
   **Objetivo:** Cada labor debe tener un precio unitario y una unidad de medida claros para evitar disputas de pago y permitir auditorías de costos precisas.
 
-### Paso 2: Planificación Financiera (Ciclos de Labor)
+### Paso 2: Planificación Financiera (Ciclos de Campo)
 
 Al comienzo de tu período de pago (ej. el día 1 del mes):
 
-1.  Crea un nuevo **Ciclo de Labor**.
-2.  Agrega **Items de Línea** para todo el trabajo que pretendas realizar.
+1.  Crea un nuevo **Ciclo de Campo**.
+2.  Agrega **Labores** para todo el trabajo que pretendas realizar.
 3.  Asigna **Contratistas** y **Lotes**.
     **Objetivo:** Observa el **Costo Total Presupuestado**. ¿Se ajusta esto a tu flujo de caja mensual? Si no es así, ajusta las cantidades o reprograma las labores no críticas para el próximo ciclo.
 
@@ -32,7 +32,7 @@ Al comienzo de tu período de pago (ej. el día 1 del mes):
 
 A medida que avanzan las semanas:
 
-1.  **Monitorea el Calendario:** Identifica los items en **Estado Rojo** (Retrasados). Si un contratista se retrasa constantemente, es posible que debas reasignar el trabajo para asegurar que la salud del lote no se deteriore.
+1.  **Monitorea el Calendario:** Identifica las **Labores** en **Estado Rojo** (Retrasados). Si un contratista se retrasa constantemente, es posible que debas reasignar el trabajo para asegurar que la salud del lote no se deteriore.
 2.  **Verifica el Progreso:** Usa el **Porcentaje de Progreso** para ver si el trabajo se está moviendo según lo planeado.
 3.  **Aprueba Registros (Logs):** Revisa los **Logs** antes de que termine el ciclo. Asegúrate de que se usen las notas para documentar cualquier problema (ej. "Lluvia intensa impidió la finalización").
 

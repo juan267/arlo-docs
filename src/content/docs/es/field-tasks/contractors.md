@@ -28,7 +28,7 @@ Al completar el formulario de creación, ten en cuenta lo siguiente:
 
 ## 2. Gestión de tu Mano de Obra
 
-Una vez creados, los contratistas pueden ser asignados a los **Items de Ciclo de Labor**.
+Una vez creados, los contratistas pueden ser asignados a las **Labores**.
 
 ### ¿Por qué es esto importante?
 

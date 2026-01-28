@@ -11,11 +11,20 @@ Las **Labores de Campo** son los bloques de construcción de las operaciones de 
 
 Navega a **Finca → Labores** y haz clic en **Agregar Labor**.
 
+:::important[Crea una vez, usa siempre]
+Las labores de campo están diseñadas para ser creadas **una sola vez**. Una vez que has definido una labor (ej. "Poda de Formación"), puedes reutilizarla en tantos **Ciclos de Campo** como sea necesario a lo largo de los años. No necesitas crear una nueva labor para cada ciclo o cada mes; simplemente selecciónala del listado al planificar tu ciclo.
+:::
+
 ### Significado de los Campos
 
 - **Nombre:** Un nombre descriptivo para la labor (ej. "Guadaña de Calles").
 - **Código:** Un identificador abreviado único (ej. "GUA-01"). Se utiliza para búsquedas rápidas y cargas masivas.
 - **Precio por Defecto:** La cantidad estándar pagada a un contratista por unidad de esta labor. La moneda sigue la configuración de tu finca.
+
+:::caution[Actualización de Precios]
+Si actualizas el **Precio por Defecto** de una labor, el sistema recalculará automáticamente los costos presupuestados y reales de todos los **Ciclos de Campo activos o futuros**. Los ciclos que ya han finalizado conservarán sus costos originales para proteger tus registros históricos.
+:::
+
 - **Unidad de Labor:** La métrica utilizada para medir el progreso. Ejemplos comunes incluyen _Árbol_, _Palma_, _Lote_ o _Metro_.
 - **Descripción:** Contexto adicional sobre los requisitos o estándares de la labor.
 
@@ -41,33 +50,33 @@ Considera el "Manejo de Malezas". En lugar de una sola labor, crea:
 
 ---
 
-## 3. Unidades: Consumo vs. Compra
+## 3. Carga y Actualización Masiva
 
-Comprender cómo el sistema maneja las unidades es clave para un análisis preciso de inventario y costos.
+Para fincas con un gran volumen de datos, la **Carga Masiva** es la herramienta más eficiente para gestionar el catálogo de labores. Puedes encontrar esta opción en el botón **Carga Masiva** dentro del listado de Labores.
 
-### Unidad de Compra (Stock)
+### Cómo funciona el proceso
 
-Es la forma en que **compras** los insumos a los proveedores (ej. un _Bidón de 20L_ de Herbicida o un _Saco de 50kg_ de Fertilizante). Tu inventario se rastrea en estas unidades.
+1.  **Descarga la Plantilla:** Haz clic en **Descargar Plantilla (.xlsx)**. El sistema generará un archivo inteligente que incluye:
+    - **Tus Labores Actuales:** Como ejemplos para que solo tengas que editarlas.
+    - **Validaciones de Datos:** Desplegables en columnas como "Unidad de Labor" para evitar errores de escritura.
+    - **Hoja de Instrucciones:** Detalles sobre el formato esperado para cada columna.
+2.  **Prepara los Datos:** Completa o edita la información en el archivo Excel.
+3.  **Sube el Archivo:** Arrastra y suelta tu archivo en el área de carga.
 
-### Unidad de Consumo (Aplicación)
+### Actualizaciones Masivas (Ej. Ajuste de Precios Anual)
 
-Es la forma en que **aplicas** el insumo en el campo (ej. _Mililitros_ por árbol o _Gramos_ por planta).
+El sistema utiliza el **Código** de la labor para identificar si debe crear un registro nuevo o actualizar uno existente.
 
-### Unidad de Labor (Ejecución)
+- **Si el código ya existe:** El sistema actualizará el nombre, la descripción y el precio de esa labor. Esto es ideal para realizar el **ajuste anual de precios** en cuestión de segundos: descargas la plantilla con tus precios actuales, los actualizas en Excel y vuelves a subir el archivo.
+- **Si el código es nuevo:** Se creará una nueva labor de campo.
 
-Es la métrica del trabajo (ej. _Árboles_ podados o _Metros_ guadañados).
+### Notificaciones y Reporte de Errores
 
-### WAVCO (Costo Promedio Ponderado)
+Una vez procesado el archivo, recibirás un **correo electrónico** con el resumen del proceso:
 
-El sistema utiliza el **WAVCO** para traducir el precio de tu Unidad de Compra a un costo de Unidad de Consumo.
-_Ejemplo:_ Si compras un saco de 50kg por $100, y una Labor de Campo consume 500g por árbol, el sistema calcula automáticamente el costo por árbol como $1. Esto asegura que tu **Costo Real** en un ciclo de labor refleje el valor real de los insumos utilizados.
+- **Éxito:** Cuántas labores fueron creadas y cuántas actualizadas.
+- **Errores:** Si hubo algún problema (ej. un código duplicado o una unidad inválida), el correo incluirá un **Reporte de Errores en Excel**. Este reporte te indicará exactamente en qué fila está el error y qué debes corregir.
 
----
-
-## 4. Carga Masiva
-
-Si tienes una lista larga de labores, utiliza la función de **Carga Masiva** en el índice de Labores.
-
-1.  Descarga la plantilla.
-2.  Completa el `código`, `nombre`, `precio_por_defecto` y `unidad_de_labor`.
-3.  Sube el archivo para crear o actualizar múltiples labores a la vez.
+:::tip[Eficiencia]
+Usa la carga masiva no solo para empezar, sino como tu herramienta principal de mantenimiento para mantener tus costos actualizados año tras año.
+:::
