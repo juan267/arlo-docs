@@ -81,6 +81,15 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "Labores",
+          items: [
+            { label: "Contratistas", slug: "field-tasks/contractors" },
+            { label: "Labores de Campo", slug: "field-tasks/tasks" },
+            { label: "Ciclos de Labor", slug: "field-tasks/cycles" },
+            { label: "Guía de Gestión", slug: "field-tasks/guides" },
+          ],
+        },
       ],
     }),
   ],
