@@ -1,79 +1,175 @@
 ---
-title: Arlo Documentation
-description: Complete documentation for the Arlo farm sanitation management platform.
+title: Arlo Agro Documentation
+description: Your complete guide for managing perennial crop farms with sanitation monitoring, labor control, inventory, harvest, and more.
 template: splash
 hero:
-  tagline: Your complete guide to managing farm sanitation inspections, monitoring, and reporting.
+  tagline: Transform field data into informed decisions. Manage sanitation, labor, inventory, and harvest from a single platform.
   image:
     file: ../../../assets/logo.svg
   actions:
     - text: Get Started
-      link: /en/sanitation/monitors/
+      link: /en/getting-started/welcome/
       icon: right-arrow
-    - text: View Forms Guide
-      link: /en/sanitation/forms/guide/
+    - text: View Field Tasks Guide
+      link: /en/field-tasks/introduction/
       icon: document
       variant: minimal
 ---
 
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Sanitation Module
+## Key Concept: Cycles
 
-The Sanitation module helps you systematically monitor pests, diseases, and crop health across your farm with offline-capable data collection and powerful analytics.
-
-### Setup & Configuration
+Arlo uses **cycles** across multiple modules to keep teams focused—similar to sprints in agile methodologies. Each module has its own cycle type with configurable duration.
 
 <CardGrid>
-  <Card title="Monitors" icon="star">
-    Register and manage the field workers responsible for performing
-    inspections. Track accountability and assign routes to specific people.
-    [Learn more →](/en/sanitation/monitors/)
+  <Card title="Field Cycles" icon="seti:clock">
+    **15 days typical** — Bundle tasks, assign contractors, compare budget vs. actual cost.
   </Card>
+  <Card title="Sanitation Routes" icon="magnifier">
+    **Weekly** — Systematic monitoring with due dates and automatic overdue detection.
+  </Card>
+  <Card title="Harvest Cycles" icon="star">
+    **1-4 weeks** — Plan expected yields and compare with actual results.
+  </Card>
+</CardGrid>
+
+---
+
+## Getting Started
+
+New to Arlo? Start here to set up your farm and understand the fundamental concepts.
+
+<CardGrid>
+  <LinkCard
+    title="Welcome to Arlo"
+    href="/en/getting-started/welcome/"
+    description="Learn about the platform, available modules, and the cycles concept."
+  />
+  <LinkCard
+    title="Farm Setup"
+    href="/en/getting-started/farm-setup/"
+    description="Create your farm, upload GeoJSON lots, and configure operational parameters."
+  />
+  <LinkCard
+    title="Users & Roles"
+    href="/en/getting-started/users-roles/"
+    description="Invite your team and assign the right permissions."
+  />
+  <LinkCard
+    title="Your First Week"
+    href="/en/getting-started/first-week/"
+    description="Day-by-day guide to get all basic modules running."
+  />
+</CardGrid>
+
+---
+
+## Main Modules
+
+### Sanitation
+
+Systematic monitoring of pests, diseases, and crop health with offline data collection and advanced analytics.
+
+<CardGrid>
   <Card title="Forms" icon="document">
-    Create custom inspection forms with flexible sampling modes, tree sections,
-    and custom fields. Use AI to help build forms based on best practices.
-    [Learn more →](/en/sanitation/forms/guide/)
+    Create inspection forms with flexible sampling modes, custom fields, and automatic alerts. [Forms Guide →](/en/sanitation/forms/guide/)
+  </Card>
+  <Card title="Routes & Calendar" icon="seti:clock">
+    Schedule weekly routes, track inspection status, and identify overdue work. [View Calendar →](/en/sanitation/calendar/)
+  </Card>
+  <Card title="Analysis" icon="puzzle">
+    Review results with heat maps, trend charts, and AI-generated insights. [Reports →](/en/sanitation/reports/analytical-reports/)
   </Card>
 </CardGrid>
 
-### Field Work
+### Field Tasks
+
+Complete labor, contractor, and operational cost management organized in work cycles.
 
 <CardGrid>
-  <Card title="Calendar" icon="seti:clock">
-    Schedule, track, and manage all your sanitation inspections with a visual
-    timeline. Monitor route statuses and identify overdue work. [Learn more
-    →](/en/sanitation/calendar/)
+  <Card title="Contractors & Tasks" icon="star">
+    Register contractors, define your task catalog and default prices. [View Contractors →](/en/field-tasks/contractors/)
   </Card>
-  <Card title="Route Launcher" icon="rocket">
-    Start and manage field inspections with offline-first capabilities. Download
-    forms before heading to the field and sync data when back online. [Learn
-    more →](/en/sanitation/launcher/)
+  <Card title="Field Cycles" icon="seti:clock">
+    Plan work in 15-day cycles, assign budgets, and track execution. [View Cycles →](/en/field-tasks/cycles/)
   </Card>
-  <Card title="Field Data Entry" icon="pencil">
-    Mobile-optimized forms for collecting sanitation data in the field. GPS
-    tracking, offline support, and intuitive navigation. [Learn more
-    →](/en/sanitation/data-entry/)
+  <Card title="Cost Reports" icon="list-format">
+    Compare budgeted vs. actual costs, generate service orders by contractor. [Management Guide →](/en/field-tasks/guides/)
   </Card>
 </CardGrid>
 
-### Reports & Analysis
+### Supplies
+
+Inventory control for fertilizers, agrochemicals, and materials using the WAVCO method.
 
 <CardGrid>
-  <Card title="Route Analysis" icon="list-format">
-    Review individual route results with detailed findings, GPS maps, and photo
-    galleries. [Learn more →](/en/sanitation/route-analysis/)
+  <Card title="Catalog" icon="open-book">
+    Define products with purchase and consumption units, automatic conversions. [View Catalog →](/en/supplies/catalog/)
   </Card>
-  <Card title="Map Reports" icon="magnifier">
-    Visualize your inspection data spatially with interactive maps showing pest
-    hotspots and coverage. [Learn more →](/en/sanitation/reports/map-reports/)
-  </Card>
-  <Card title="Analytical Reports" icon="puzzle">
-    Deep dive into your data with advanced charts, operation metrics, coverage
-    matrices, and AI-powered insights. [Learn more
-    →](/en/sanitation/reports/analytical-reports/)
+  <Card title="Movements" icon="right-arrow">
+    Record purchase entries and exits linked to field tasks. [Entries →](/en/supplies/entries/) | [Exits →](/en/supplies/exits/)
   </Card>
 </CardGrid>
+
+### Harvest
+
+Harvest planning and tracking with comparison of planned vs. actual yields.
+
+<CardGrid>
+  <Card title="Cycles & Schedules" icon="seti:clock">
+    Define harvest cycles and schedule expected yields by lot and group. [View Cycles →](/en/harvest/cycles/)
+  </Card>
+  <Card title="Scale Entries" icon="pencil">
+    Record weights with automatic net weight calculation and vehicle memory. [View Entries →](/en/harvest/entries/)
+  </Card>
+</CardGrid>
+
+### Statements
+
+Professional shipment documentation for clients linked to your harvest.
+
+<CardGrid>
+  <LinkCard
+    title="Create Statements"
+    href="/en/statements/guide/"
+    description="Generate shipping documents with product, weight, and client details."
+  />
+  <LinkCard
+    title="Manage Clients"
+    href="/en/statements/clients/"
+    description="Register clients with contact and billing information."
+  />
+</CardGrid>
+
+---
+
+## Advanced Tools
+
+<CardGrid>
+  <LinkCard
+    title="Custom Forms"
+    href="/en/custom-forms/introduction/"
+    description="Capture additional data with flexible forms for audits and checklists."
+  />
+  <LinkCard
+    title="Alert System"
+    href="/en/alerts/overview/"
+    description="Configure smart notifications when indicators exceed thresholds."
+  />
+  <LinkCard
+    title="AI Analysis"
+    href="/en/analysis/ai-analysis/"
+    description="Interpret complex data with AI-generated summaries and recommendations."
+  />
+  <LinkCard
+    title="Role Guides"
+    href="/en/role-guides/owner/"
+    description="Specific documentation for owners, administrators, and supervisors."
+  />
+</CardGrid>
+
+---
 
 ## Quick Links
 
@@ -81,16 +177,21 @@ The Sanitation module helps you systematically monitor pests, diseases, and crop
   <LinkCard
     title="Custom Fields"
     href="/en/sanitation/forms/custom-fields/"
-    description="Learn how to add numbers, checkboxes, photos, and more to your forms."
+    description="Learn to add numbers, checkboxes, photos, and more to your forms."
   />
   <LinkCard
-    title="Alerts & Thresholds"
+    title="Sanitation Alerts"
     href="/en/sanitation/forms/alerts/"
-    description="Configure automatic alerts when pest levels exceed your thresholds."
+    description="Configure automatic alerts when pest levels exceed thresholds."
   />
   <LinkCard
-    title="Assessment Guide"
-    href="/en/sanitation/reports/assessment-guide/"
-    description="Best practices for evaluating your sanitation data."
+    title="Sanitation Map"
+    href="/en/sanitation/reports/map-reports/"
+    description="Visualize inspection data with interactive maps."
+  />
+  <LinkCard
+    title="Exports"
+    href="/en/advanced/exports/"
+    description="Generate XLSX, PDF reports and automatic email sends."
   />
 </CardGrid>

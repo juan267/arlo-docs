@@ -1,81 +1,175 @@
 ---
-title: Documentación de Arlo
-description: Documentación completa para la plataforma de gestión de sanidad agrícola Arlo
+title: Documentación de Arlo Agro
+description: Tu guía completa para gestionar fincas de cultivos perennes con monitoreo de sanidad, control de labores, inventario, cosecha y más.
 template: splash
 hero:
-  tagline: Tu guía completa para gestionar inspecciones de sanidad, monitoreo y reportes en tu finca.
+  tagline: Transforma datos de campo en decisiones informadas. Gestiona sanidad, labores, inventario y cosecha desde una sola plataforma.
   image:
     file: ../../../assets/logo.svg
   actions:
     - text: Comenzar
-      link: /es/sanitation/monitors/
+      link: /es/getting-started/welcome/
       icon: right-arrow
-    - text: Ver Guía de Formularios
-      link: /es/sanitation/forms/guide/
+    - text: Ver Guía de Labores
+      link: /es/field-tasks/introduction/
       icon: document
       variant: minimal
 ---
 
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Módulo de Sanidad
+## Concepto Clave: Los Ciclos
 
-El módulo de Sanidad te ayuda a monitorear sistemáticamente plagas, enfermedades y la salud de tus cultivos en toda la finca, con recolección de datos sin conexión y analíticas avanzadas.
-
-### Configuración Inicial
+Arlo utiliza **ciclos** en varios módulos para mantener a los equipos enfocados, similar a sprints en metodologías ágiles. Cada módulo tiene su propio tipo de ciclo con duración configurable.
 
 <CardGrid>
-  <Card title="Monitores" icon="star">
-    Registra y gestiona a los trabajadores de campo encargados de realizar las
-    inspecciones. Controla la responsabilidad y asigna rutas a personas
-    específicas. [Más información →](/es/sanitation/monitors/)
+  <Card title="Ciclos de Campo" icon="seti:clock">
+    **15 días típicos** — Agrupa labores, asigna contratistas, compara presupuesto vs. costo real.
   </Card>
+  <Card title="Rutas de Sanidad" icon="magnifier">
+    **Semanal** — Monitoreo sistemático con fechas límite y detección automática de retrasos.
+  </Card>
+  <Card title="Ciclos de Cosecha" icon="star">
+    **1-4 semanas** — Planifica rendimientos esperados y compara con resultados reales.
+  </Card>
+</CardGrid>
+
+---
+
+## Primeros Pasos
+
+¿Nuevo en Arlo? Comienza aquí para configurar tu finca y entender los conceptos fundamentales.
+
+<CardGrid>
+  <LinkCard
+    title="Bienvenido a Arlo"
+    href="/es/getting-started/welcome/"
+    description="Conoce la plataforma, los módulos disponibles y el concepto de ciclos."
+  />
+  <LinkCard
+    title="Configuración de Finca"
+    href="/es/getting-started/farm-setup/"
+    description="Crea tu finca, carga lotes GeoJSON y configura parámetros operativos."
+  />
+  <LinkCard
+    title="Usuarios y Roles"
+    href="/es/getting-started/users-roles/"
+    description="Invita a tu equipo y asigna los permisos correctos."
+  />
+  <LinkCard
+    title="Tu Primera Semana"
+    href="/es/getting-started/first-week/"
+    description="Guía día a día para poner en marcha todos los módulos básicos."
+  />
+</CardGrid>
+
+---
+
+## Módulos Principales
+
+### Sanidad
+
+Monitoreo sistemático de plagas, enfermedades y salud de cultivos con recolección de datos offline y analíticas avanzadas.
+
+<CardGrid>
   <Card title="Formularios" icon="document">
-    Crea formularios de inspección personalizados con modos de muestreo
-    flexibles, secciones de árbol y campos personalizados. Usa IA para crear
-    formularios basados en mejores prácticas. [Más información
-    →](/es/sanitation/forms/guide/)
+    Crea formularios de inspección con modos de muestreo flexibles, campos personalizados y alertas automáticas. [Guía de Formularios →](/es/sanitation/forms/guide/)
+  </Card>
+  <Card title="Rutas y Calendario" icon="seti:clock">
+    Programa rutas semanales, rastrea el estado de inspecciones e identifica trabajo atrasado. [Ver Calendario →](/es/sanitation/calendar/)
+  </Card>
+  <Card title="Análisis" icon="puzzle">
+    Revisa resultados con mapas de calor, gráficos de tendencias e insights generados por IA. [Informes →](/es/sanitation/reports/analytical-reports/)
   </Card>
 </CardGrid>
 
-### Trabajo de Campo
+### Labores
+
+Gestión completa de mano de obra, contratistas y costos operativos organizados en ciclos de trabajo.
 
 <CardGrid>
-  <Card title="Calendario" icon="seti:clock">
-    Programa, rastrea y gestiona todas tus inspecciones de sanidad con una línea
-    de tiempo visual. Monitorea el estado de las rutas e identifica trabajo
-    atrasado. [Más información →](/es/sanitation/calendar/)
+  <Card title="Contratistas y Tareas" icon="star">
+    Registra contratistas, define tu catálogo de labores y precios por defecto. [Ver Contratistas →](/es/field-tasks/contractors/)
   </Card>
-  <Card title="Lanzador de Rutas" icon="rocket">
-    Inicia y gestiona inspecciones de campo con capacidades offline. Descarga
-    formularios antes de salir al campo y sincroniza los datos cuando vuelvas a
-    tener conexión. [Más información →](/es/sanitation/launcher/)
+  <Card title="Ciclos de Campo" icon="seti:clock">
+    Planifica trabajo en ciclos de 15 días, asigna presupuestos y rastrea ejecución. [Ver Ciclos →](/es/field-tasks/cycles/)
   </Card>
-  <Card title="Toma de Datos" icon="pencil">
-    Formularios optimizados para móvil para recolectar datos de sanidad en el
-    campo. Seguimiento GPS, soporte offline y navegación intuitiva. [Más
-    información →](/es/sanitation/data-entry/)
+  <Card title="Reportes de Costos" icon="list-format">
+    Compara costos presupuestados vs. reales, genera órdenes de servicio por contratista. [Guía de Gestión →](/es/field-tasks/guides/)
   </Card>
 </CardGrid>
 
-### Reportes y Análisis
+### Insumos
+
+Control de inventario para fertilizantes, agroquímicos y materiales usando el método WAVCO.
 
 <CardGrid>
-  <Card title="Análisis de Rutas" icon="list-format">
-    Revisa los resultados de rutas individuales con hallazgos detallados, mapas
-    GPS y galerías de fotos. [Más información →](/es/sanitation/route-analysis/)
+  <Card title="Catálogo" icon="open-book">
+    Define productos con unidades de compra y consumo, conversiones automáticas. [Ver Catálogo →](/es/supplies/catalog/)
   </Card>
-  <Card title="Mapas de Sanidad" icon="magnifier">
-    Visualiza tus datos de inspección espacialmente con mapas interactivos que
-    muestran focos de plagas y cobertura. [Más información
-    →](/es/sanitation/reports/map-reports/)
-  </Card>
-  <Card title="Informes Analíticos" icon="puzzle">
-    Profundiza en tus datos con gráficos avanzados, métricas operativas,
-    matrices de cobertura e insights impulsados por IA. [Más información
-    →](/es/sanitation/reports/analytical-reports/)
+  <Card title="Movimientos" icon="right-arrow">
+    Registra entradas de compra y salidas vinculadas a labores de campo. [Entradas →](/es/supplies/entries/) | [Salidas →](/es/supplies/exits/)
   </Card>
 </CardGrid>
+
+### Cosecha
+
+Planificación y seguimiento de la cosecha con comparación de rendimientos planeados vs. reales.
+
+<CardGrid>
+  <Card title="Ciclos y Programas" icon="seti:clock">
+    Define ciclos de cosecha y programa rendimientos esperados por lote y grupo. [Ver Ciclos →](/es/harvest/cycles/)
+  </Card>
+  <Card title="Entradas de Báscula" icon="pencil">
+    Registra pesos con cálculo automático de peso neto y memoria de vehículos. [Ver Entradas →](/es/harvest/entries/)
+  </Card>
+</CardGrid>
+
+### Remisiones
+
+Documentación profesional de envíos a clientes vinculada a tu cosecha.
+
+<CardGrid>
+  <LinkCard
+    title="Crear Remisiones"
+    href="/es/statements/guide/"
+    description="Genera documentos de envío con detalles de producto, peso y cliente."
+  />
+  <LinkCard
+    title="Gestionar Clientes"
+    href="/es/statements/clients/"
+    description="Registra clientes con información de contacto y facturación."
+  />
+</CardGrid>
+
+---
+
+## Herramientas Avanzadas
+
+<CardGrid>
+  <LinkCard
+    title="Formularios Personalizados"
+    href="/es/custom-forms/introduction/"
+    description="Captura datos adicionales con formularios flexibles para auditorías y checklists."
+  />
+  <LinkCard
+    title="Sistema de Alertas"
+    href="/es/alerts/overview/"
+    description="Configura notificaciones inteligentes cuando indicadores superen umbrales."
+  />
+  <LinkCard
+    title="Análisis con IA"
+    href="/es/analysis/ai-analysis/"
+    description="Interpreta datos complejos con resúmenes y recomendaciones generadas por IA."
+  />
+  <LinkCard
+    title="Guías por Rol"
+    href="/es/role-guides/owner/"
+    description="Documentación específica para propietarios, administradores y supervisores."
+  />
+</CardGrid>
+
+---
 
 ## Enlaces Rápidos
 
@@ -83,16 +177,21 @@ El módulo de Sanidad te ayuda a monitorear sistemáticamente plagas, enfermedad
   <LinkCard
     title="Campos Personalizados"
     href="/es/sanitation/forms/custom-fields/"
-    description="Aprende a agregar números, casillas de verificación, fotos y más a tus formularios."
+    description="Aprende a agregar números, casillas, fotos y más a tus formularios."
   />
   <LinkCard
-    title="Alertas y Umbrales"
+    title="Alertas de Sanidad"
     href="/es/sanitation/forms/alerts/"
-    description="Configura alertas automáticas cuando los niveles de plagas superen tus umbrales."
+    description="Configura alertas automáticas cuando los niveles de plagas superen umbrales."
   />
   <LinkCard
-    title="Guía de Evaluación"
-    href="/es/sanitation/reports/assessment-guide/"
-    description="Mejores prácticas para evaluar tus datos de sanidad."
+    title="Mapa de Sanidad"
+    href="/es/sanitation/reports/map-reports/"
+    description="Visualiza tus datos de inspección con mapas interactivos."
+  />
+  <LinkCard
+    title="Exportaciones"
+    href="/es/advanced/exports/"
+    description="Genera reportes XLSX, PDF y envíos automáticos por correo."
   />
 </CardGrid>
