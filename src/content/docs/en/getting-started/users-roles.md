@@ -90,10 +90,39 @@ To add a new team member:
 4. Select the appropriate role
 5. Click **Send Invitation**
 
-The user will receive an email with instructions to create their account (if new) or to accept farm access (if they already have an Arlo account).
+The system will automatically send an invitation email to the user.
 
-:::tip[Pending invitations]
-You can view and resend pending invitations from the same Users section. Invitations expire after 7 days.
+### Acceptance Process
+
+The acceptance flow varies depending on whether the user already has an Arlo account:
+
+**Existing user (already has an Arlo account):**
+1. Receives email with invitation link
+2. Clicking the link shows a confirmation page with organization and role details
+3. Accepts the invitation with one click
+4. Is automatically signed in and redirected to the farm
+
+**New user (doesn't have an account):**
+1. Receives email with invitation link
+2. Is redirected to set up their password
+3. Sees a personalized message: "Create your account for [Organization Name]"
+4. Upon setting their password, their account is automatically verified
+5. Is signed in and redirected to the farm
+
+:::note[Automatic sign-in]
+In both cases, the user is automatically signed in after accepting the invitation. No manual credential entry is required.
+:::
+
+### Manage Pending Invitations
+
+Pending invitations appear at the top of the Users page. From there you can:
+
+- **View status:** Invitations show whether they are pending or expired
+- **Resend:** Sends a new email with an updated link (the previous link stops working)
+- **Cancel:** Permanently invalidates the invitation
+
+:::tip[Expiration]
+Invitations expire after 7 days. Expired invitations are shown with an "Expired" label and can be resent.
 :::
 
 ---
@@ -155,6 +184,15 @@ An Owner can delete the user and create a new invitation with a different email.
 
 **Can I create custom roles?**
 Not currently. The five defined roles cover most needs. If you have a special case, contact support.
+
+**What if the invitation expired?**
+Invitations expire after 7 days. Go to **Farm → Users**, find the expired invitation in the pending invitations section, and click **Resend**. This generates a new link and sends an updated email.
+
+**Can I cancel an invitation sent by mistake?**
+Yes. From the pending invitations section in **Farm → Users**, click **Cancel** next to the invitation. The link will stop working immediately.
+
+**What if the user is already a member of the organization?**
+The system detects this automatically. If someone tries to accept an invitation to an organization they're already a member of, they'll see a message indicating they already have access.
 
 ---
 

@@ -90,10 +90,39 @@ Para agregar un nuevo miembro al equipo:
 4. Selecciona el rol apropiado
 5. Haz clic en **Enviar Invitación**
 
-El usuario recibirá un correo con instrucciones para crear su cuenta (si es nuevo) o para aceptar acceso a la finca (si ya tiene cuenta en Arlo).
+El sistema enviará automáticamente un correo de invitación al usuario.
 
-:::tip[Invitaciones pendientes]
-Puedes ver y reenviar invitaciones pendientes desde la misma sección de Usuarios. Las invitaciones expiran después de 7 días.
+### Proceso de Aceptación
+
+El flujo de aceptación varía según si el usuario ya tiene cuenta en Arlo:
+
+**Usuario existente (ya tiene cuenta en Arlo):**
+1. Recibe correo con enlace de invitación
+2. Al hacer clic, ve una página de confirmación con detalles de la organización y rol
+3. Acepta la invitación con un clic
+4. Es iniciado sesión automáticamente y redirigido a la finca
+
+**Usuario nuevo (no tiene cuenta):**
+1. Recibe correo con enlace de invitación
+2. Es redirigido a crear su contraseña
+3. Ve un mensaje personalizado: "Crea tu cuenta para [Nombre de Organización]"
+4. Al establecer su contraseña, su cuenta es verificada automáticamente
+5. Es iniciado sesión y redirigido a la finca
+
+:::note[Inicio de sesión automático]
+En ambos casos, el usuario es iniciado sesión automáticamente después de aceptar la invitación. No necesita ingresar credenciales manualmente.
+:::
+
+### Gestionar Invitaciones Pendientes
+
+Las invitaciones pendientes aparecen en la parte superior de la página de Usuarios. Desde ahí puedes:
+
+- **Ver estado:** Invitaciones muestran si están pendientes o expiradas
+- **Reenviar:** Envía un nuevo correo con un enlace actualizado (el enlace anterior deja de funcionar)
+- **Cancelar:** Invalida la invitación permanentemente
+
+:::tip[Expiración]
+Las invitaciones expiran después de 7 días. Las invitaciones expiradas se muestran con una etiqueta de "Expirada" y pueden ser reenviadas.
 :::
 
 ---
@@ -155,6 +184,15 @@ Un Propietario puede eliminar al usuario y crear una nueva invitación con un co
 
 **¿Puedo crear roles personalizados?**
 Actualmente no. Los cinco roles definidos cubren la mayoría de necesidades. Si tienes un caso especial, contacta a soporte.
+
+**¿Qué pasa si la invitación expiró?**
+Las invitaciones expiran después de 7 días. Ve a **Finca → Usuarios**, encuentra la invitación expirada en la sección de invitaciones pendientes, y haz clic en **Reenviar**. Esto genera un nuevo enlace y envía un correo actualizado.
+
+**¿Puedo cancelar una invitación enviada por error?**
+Sí. Desde la sección de invitaciones pendientes en **Finca → Usuarios**, haz clic en **Cancelar** junto a la invitación. El enlace dejará de funcionar inmediatamente.
+
+**¿Qué pasa si el usuario ya es miembro de la organización?**
+El sistema detecta esto automáticamente. Si alguien intenta aceptar una invitación a una organización de la que ya es miembro, verá un mensaje indicando que ya tiene acceso.
 
 ---
 
