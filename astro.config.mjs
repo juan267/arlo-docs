@@ -31,7 +31,16 @@ export default defineConfig({
       light: "./src/assets/logo.svg",
       dark: "./src/assets/logo-dark.svg",
     },
+    components: {
+      SocialIcons: "./src/components/SocialIcons.astro",
+    },
     sidebar: [
+      {
+        label: "Ir a Arlo",
+        link: "https://arloagro.com",
+        translations: { en: "Go to Arlo" },
+        attrs: { target: "_blank" },
+      },
       {
         label: "Comenzando",
         translations: { en: "Getting Started" },
