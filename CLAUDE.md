@@ -24,7 +24,7 @@ yarn preview    # Preview production build locally
 ## Content Structure
 
 Documentation lives in `src/content/docs/` organized by locale:
-- `src/content/docs/es/` - Spanish content (default)
+- `src/content/docs/` - Spanish content (root locale, default)
 - `src/content/docs/en/` - English content
 
 Each locale mirrors the same structure with matching slugs. The sidebar is configured in `astro.config.mjs` with these main sections:

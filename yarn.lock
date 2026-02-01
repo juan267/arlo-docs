@@ -80,7 +80,7 @@
   dependencies:
     prismjs "^1.30.0"
 
-"@astrojs/sitemap@^3.3.0":
+"@astrojs/sitemap@^3.3.0", "@astrojs/sitemap@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.7.0.tgz#26ffe9b2f51e2720e5e96f358ecc20f4d87f7218"
   integrity sha512-+qxjUrz6Jcgh+D5VE1gKUJTA3pSthuPHe6Ao5JCxok794Lewx8hBFaWHtOnN0ntb2lfOf7gvOi9TefUswQ/ZVA==
