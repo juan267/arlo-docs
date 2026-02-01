@@ -1,0 +1,52 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Head.astro';
+
+const { entry, lang } = Astro.props;
+
+const structuredData = entry ? {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": entry.data.title,
+  "description": entry.data.description || "Arlo Agro documentation",
+  "author": {
+    "@type": "Organization",
+    "name": "Arlo Agro"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arlo Agro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.arloagro.com/favicon.ico"
+    }
+  },
+  "inLanguage": lang === 'es' ? 'es-ES' : 'en-US',
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": Astro.url.href
+  }
+} : null;
+
+const websiteData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Arlo Agro Documentation",
+  "url": "https://docs.arloagro.com",
+  "description": lang === 'es'
+    ? "Documentación completa de la plataforma de gestión agrícola Arlo Agro"
+    : "Complete documentation for the Arlo Agro farm management platform",
+  "inLanguage": lang === 'es' ? 'es-ES' : 'en-US',
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arlo Agro"
+  }
+};
+---
+
+<Default {...Astro.props}>
+  <slot />
+</Default>
+
+{structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
+<script type="application/ld+json" set:html={JSON.stringify(websiteData)} />
