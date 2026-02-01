@@ -48,6 +48,7 @@ export default defineConfig({
         items: [
           { label: "Bienvenido", slug: "getting-started/welcome", translations: { en: "Welcome" } },
           { label: "Configuración de Finca", slug: "getting-started/farm-setup", translations: { en: "Farm Setup" } },
+          { label: "Agregar Fincas", slug: "getting-started/add-farm", translations: { en: "Add Farms" } },
           { label: "Usuarios y Roles", slug: "getting-started/users-roles", translations: { en: "Users & Roles" } },
           { label: "Tu Primera Semana", slug: "getting-started/first-week", translations: { en: "Your First Week" } },
         ],
