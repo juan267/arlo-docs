@@ -10,12 +10,14 @@ El **Asistente de IA** te ayuda a crear formularios de inspección de sanidad si
 ## ¿Por qué Usar el Asistente de IA?
 
 Crear un buen formulario de inspección requiere conocimiento sobre:
+
 - Plagas y enfermedades relevantes para tu cultivo
 - Métodos de muestreo apropiados
 - Escalas de evaluación estándar
 - Umbrales de acción recomendados
 
 El asistente de IA:
+
 - **Conoce las plagas comunes** de diferentes cultivos
 - **Sugiere estructuras** basadas en mejores prácticas
 - **Incluye umbrales** según estándares de la industria
@@ -34,6 +36,7 @@ El asistente de IA:
 ### Describir tu necesidad
 
 Escribe un mensaje describiendo:
+
 - Qué cultivo tienes
 - Qué plagas o enfermedades te preocupan
 - Qué tipo de inspección necesitas
@@ -41,11 +44,13 @@ Escribe un mensaje describiendo:
 ### Ejemplos de prompts efectivos
 
 **Básico:**
+
 ```
 Necesito un formulario para monitorear plagas en cítricos
 ```
 
 **Más específico:**
+
 ```
 Crea un formulario para monitorear HLB, minador de hoja
 y ácaros en un huerto de naranja Valencia en zona tropical.
@@ -53,6 +58,7 @@ Incluye evaluación de síntomas y conteo de insectos.
 ```
 
 **Detallado:**
+
 ```
 Necesito un formulario de inspección semanal para aguacate Hass:
 - Evaluar trips en flores (escala 0-5)
@@ -78,13 +84,13 @@ La IA crea un formulario con:
 
 ### Tipos de campos que puede generar
 
-| Tipo | Uso típico |
-|------|------------|
-| Número | Conteo de insectos, porcentaje de daño |
-| Selección | Nivel de severidad, presencia/ausencia |
-| Checkbox | Síntomas observados, tratamientos previos |
-| Foto | Evidencia visual de problemas |
-| Texto | Notas y observaciones |
+| Tipo      | Uso típico                                |
+| --------- | ----------------------------------------- |
+| Número    | Conteo de insectos, porcentaje de daño    |
+| Selección | Nivel de severidad, presencia/ausencia    |
+| Checkbox  | Síntomas observados, tratamientos previos |
+| Foto      | Evidencia visual de problemas             |
+| Texto     | Notas y observaciones                     |
 
 ### Ejemplo de formulario generado
 
@@ -219,17 +225,6 @@ Aunque la IA genera formularios útiles, siempre revisa con tu equipo técnico a
 ---
 
 ## Ejemplos por Cultivo
-
-### Cannabis
-
-```
-Crea un formulario para monitoreo de cannabis indoor:
-- Ácaros (especialmente araña roja)
-- Trips
-- Hongos (Botrytis, mildiu polvoriento)
-- Deficiencias nutricionales
-- Evaluación por etapa de crecimiento (vegetativo/floración)
-```
 
 ### Palma de aceite
 
