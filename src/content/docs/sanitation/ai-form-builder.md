@@ -31,7 +31,12 @@ El asistente de IA:
 
 1. Ve a **Sanidad → Formularios**
 2. Haz clic en **Crear con IA** o **Asistente de IA**
+
+![Página de formularios con botón Crear con IA](../../../assets/images/sanitation/ai-form-builder-forms-index-es-desktop.webp)
+
 3. Se abrirá el panel de conversación
+
+![Panel del asistente de IA abierto](../../../assets/images/sanitation/ai-form-builder-ai-builder-modal-open-es-desktop.webp)
 
 ### Describir tu necesidad
 

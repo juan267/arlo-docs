@@ -29,7 +29,12 @@ The AI assistant:
 
 1. Go to **Sanitation → Forms**
 2. Click **Create with AI** or **AI Assistant**
+
+![Forms page with Create with AI button](../../../../assets/images/sanitation/ai-form-builder-forms-index-en-desktop.webp)
+
 3. The conversation panel opens
+
+![AI assistant panel open](../../../../assets/images/sanitation/ai-form-builder-ai-builder-modal-open-en-desktop.webp)
 
 ### Describe your need
 
