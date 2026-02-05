@@ -8,6 +8,8 @@ El **Calendario de Sanidad** es tu centro de control para planear y monitorear e
 ## Descripción General
 El calendario te permite ver todas tus actividades de sanidad de un vistazo. Cada entrada está identificada con el color de su **Formulario de Sanidad**, lo que facilita identificar diferentes tipos de monitoreo (ej. Ácaros, Hormigas, Enfermedades) sin tener que leer cada etiqueta.
 
+![Calendario de planificación de rutas](../../../assets/images/sanitation/calendar-route-calendar-es-desktop.webp)
+
 ---
 
 ## Programación de Trabajo

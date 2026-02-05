@@ -50,6 +50,15 @@ Sistema de notificaciones inteligentes que te avisa cuando los indicadores super
 
 ---
 
+## Tu Panel de Control
+
+![Panel de control principal de Arlo](../../../assets/images/getting-started/welcome-dashboard-overview-es-mobile.webp)
+
+
+![Panel de control principal de Arlo](../../../assets/images/getting-started/welcome-dashboard-overview-es-desktop.webp)
+
+---
+
 ## Cultivos Soportados
 
 Arlo está optimizado para **cultivos perennes** donde el monitoreo continuo y la planificación a largo plazo son esenciales:

@@ -5,6 +5,12 @@ description: Aprende a crear y configurar formularios de inspección para tu fin
 
 Los Formularios de Sanidad son el corazón de tu sistema de monitoreo. Definen exactamente qué datos se recolectarán en el campo, cuántos árboles se inspeccionarán y qué detalles específicos son importantes para tus cultivos.
 
+## Vista General de Formularios
+
+La página de formularios muestra todos los formularios de sanidad configurados en tu finca. Desde aquí puedes crear nuevos formularios, editarlos, y ver cuántas alertas están configuradas para cada uno.
+
+![Vista general de la lista de formularios](../../../../assets/images/sanitation/forms-guide-forms-list-es-desktop.webp)
+
 ## Entendiendo los Modos de Muestreo
 
 La decisión más importante al crear un formulario es elegir el **Modo de Muestreo**. Esto le indica al sistema cómo debe el inspector recorrer el lote.
@@ -33,6 +39,8 @@ Al crear o editar un formulario, verás varias opciones de configuración:
 | **Número de Secciones del Árbol** | En cuántas partes se divide el árbol (ej. 4 para Norte, Sur, Este, Oeste). |
 | **Muestras por Sección** | Cuántos puntos de datos recolectar en cada sección (ej. 2 hojas por sección). |
 | **Muestras Abiertas** | Si está activado, el monitor puede decidir cuántas muestras tomar en cada punto en lugar de seguir un número fijo. |
+
+![Página de creación de formulario mostrando ajustes de configuración](../../../../assets/images/sanitation/forms-guide-new-form-config-es-desktop.webp)
 
 ---
 
@@ -91,6 +99,10 @@ Una pregunta común es: *"¿Debería poner esto en el nivel de Árbol o en el de
 Los datos en el **Nivel de Muestra** se promedian o suman automáticamente para darte un "Puntaje por Árbol". Los datos en el **Nivel de Árbol** te dicen cuántos árboles en la finca están afectados.
 :::
 
+En la práctica, puedes ver estos tres niveles claramente organizados cuando visualizas un formulario existente:
+
+![Ejemplo de formulario mostrando preguntas en los tres niveles: Ruta, Árbol y Muestra](../../../../assets/images/sanitation/forms-guide-tree-sample-levels-es-desktop.webp)
+
 ---
 
 ## Ejemplos Reales de Formularios
@@ -109,6 +121,10 @@ Este formulario se usa para una inspección sistemática semanal donde se busca 
     *   **Nivel Ruta:** Clima (Soleado, Nublado, Lluvia).
     *   **Nivel Árbol:** Vigor del árbol (Alto, Medio, Bajo).
     *   **Nivel Muestra:** Conteo de ácaros (Número).
+
+Así es como se ve este formulario configurado en el sistema:
+
+![Detalles del formulario "Monitoreo Acaros" mostrando configuración de modo cerrado](../../../../assets/images/sanitation/forms-guide-form-detail-config-es-desktop.webp)
 
 ### Ejemplo 2: Monitoreo de Hormigas (Modo Abierto)
 Este formulario se usa para recorrer el lote y registrar cada hormiguero que se encuentre para su tratamiento.

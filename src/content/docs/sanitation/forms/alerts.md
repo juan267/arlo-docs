@@ -9,6 +9,10 @@ Las Alertas te permiten monitorear los datos de tus fincas de manera automática
 
 Las alertas en el módulo de Sanidad están vinculadas a un **Formulario de Sanidad**. Esto significa que la alerta vigilará los datos recolectados a través de ese formulario específico.
 
+![Sección de alertas configuradas en formulario](../../../../assets/images/sanitation/forms-alerts-list-es-desktop.webp)
+
+En la vista de un formulario, la sección de Alertas muestra todas las alertas configuradas con su estado (Activa/Inactiva), modo de evaluación (Tiempo Real), última evaluación, y número de veces que se ha disparado.
+
 ### Modos de Evaluación
 
 Puedes elegir cuándo quieres que el sistema revise las condiciones:
@@ -39,6 +43,10 @@ La regla matemática que dispara la alerta:
 - **Entre (Between)**: Ej. "pH entre 5.5 y 7.0".
 - **Igual a**: Ej. "Presencia de plaga igual a Sí".
 
+![Configuración de condiciones de alerta](../../../../assets/images/sanitation/forms-alerts-conditions-es-desktop.webp)
+
+El formulario de configuración te permite seleccionar el campo personalizado a monitorear, el método de agregación (Promedio, Suma, etc.), el operador de comparación, y el valor umbral que dispara la alerta.
+
 ---
 
 ## Compatibilidad por Tipo de Campo
@@ -63,6 +71,10 @@ Cuando una alerta se dispara, el sistema envía notificaciones de dos formas:
 ### ¿Quién recibe la alerta?
 - **Destinatarios Específicos**: Puedes elegir usuarios individuales de la finca para que reciban la alerta.
 - **Destinatarios Globales**: Si la finca tiene configurados "Destinatarios Globales" (ej. el Gerente General), ellos también recibirán la notificación si activas esta opción.
+
+![Configuración de destinatarios de alerta](../../../../assets/images/sanitation/forms-alerts-recipients-es-desktop.webp)
+
+La sección de Destinatarios de Notificación te permite activar notificaciones a destinatarios globales y seleccionar usuarios específicos de la finca que recibirán las alertas por correo electrónico.
 
 :::tip[Control de Spam]
 El sistema tiene un **Periodo de Enfriamiento (Cooldown)** para evitar enviarte cientos de correos por el mismo problema. Si una alerta se dispara varias veces seguidas, solo recibirás la primera notificación hasta que pase el tiempo de enfriamiento configurado para la finca.

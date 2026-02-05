@@ -9,6 +9,10 @@ Alerts allow you to monitor your farm data automatically. Instead of reviewing e
 
 Alerts in the Sanitation module are linked to a **Sanitation Form**. This means the alert will watch the data collected through that specific form.
 
+![Configured alerts section in form](../../../../../assets/images/sanitation/forms-alerts-list-es-desktop.webp)
+
+In the form view, the Alerts section displays all configured alerts with their status (Active/Inactive), evaluation mode (Real-time), last evaluation, and the number of times it has been triggered.
+
 ### Evaluation Modes
 
 You can choose when you want the system to check the conditions:
@@ -39,6 +43,10 @@ The mathematical rule that triggers the alert:
 - **Between**: e.g., "pH between 5.5 and 7.0".
 - **Equal to**: e.g., "Pest presence equal to Yes".
 
+![Alert condition configuration](../../../../../assets/images/sanitation/forms-alerts-conditions-es-desktop.webp)
+
+The configuration form allows you to select the custom field to monitor, the aggregation method (Average, Sum, etc.), the comparison operator, and the threshold value that triggers the alert.
+
 ---
 
 ## Compatibility by Field Type
@@ -63,6 +71,10 @@ When an alert is triggered, the system sends notifications in two ways:
 ### Who receives the alert?
 - **Specific Recipients**: You can choose individual farm users to receive the alert.
 - **Global Recipients**: If the farm has "Global Recipients" configured (e.g., the General Manager), they will also receive the notification if you enable this option.
+
+![Alert recipients configuration](../../../../../assets/images/sanitation/forms-alerts-recipients-es-desktop.webp)
+
+The Notification Recipients section allows you to enable notifications to global recipients and select specific farm users who will receive the alerts via email.
 
 :::tip[Spam Control]
 The system has a **Cooldown Period** to avoid sending you hundreds of emails for the same issue. If an alert triggers several times in a row, you will only receive the first notification until the configured cooldown time for the farm has passed.
