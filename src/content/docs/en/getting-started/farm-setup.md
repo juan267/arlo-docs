@@ -84,14 +84,14 @@ Navigate to **Farm → Settings** to adjust operational parameters.
 
 | Parameter | Description | Default Value |
 |-----------|-------------|---------------|
-| **Field Cycle Duration** | Number of days for each work cycle | 15 days |
+| **Field cycle weeks** | ISO weeks (Monday–Sunday) per new cycle | 1 week |
 
-The **field cycle duration** automatically determines the end date when you create a new cycle. For example, if you set 15 days and create a cycle starting January 1st, the end date will automatically be January 15th.
+**Preferred length** is 1 to 4 ISO weeks. When you create a cycle you pick the start week; the system fills that many free weeks (and shortens if a later week is occupied). Example: 2 weeks from 2026 week 33 is Monday 10 Aug – Sunday 23 Aug, not “15 consecutive days from January 1st.”
 
-:::tip[Common rhythms]
-- **15 days**: Ideal for bi-weekly payroll or contractor payments every two weeks
-- **30 days**: For monthly operational planning
-- **7 days**: For operations requiring intensive weekly tracking
+:::tip[Rhythms]
+- **1 week**: weekly tracking
+- **2 weeks**: bi-weekly contractor payment rhythm
+- **3–4 weeks**: longer operational planning
 :::
 
 ### Harvest Settings
@@ -126,7 +126,8 @@ Each module has its own initial setup:
 - Create supply catalog
 
 ### Harvest
-- Register vehicles with empty weight
+- Choose entry flows (with vehicle, without vehicle, or both)
+- Register vehicles with empty weight if you use the with-vehicle flow
 - Define harvest units (baskets, crates)
 - Create harvest groups
 
@@ -139,7 +140,7 @@ Before starting operations, verify that you have:
 - [ ] At least one lot configured with area
 - [ ] Correct timezone for your location
 - [ ] Currency configured for financial reports
-- [ ] Field cycle duration set according to your payment rhythm
+- [ ] Field cycle length set (1–4 ISO weeks) according to your payment rhythm
 
 ---
 

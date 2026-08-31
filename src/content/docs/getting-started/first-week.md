@@ -12,7 +12,7 @@ Esta guía te lleva día a día a través de las actividades clave para poner en
 ### Mañana: Configuración de Finca
 - [ ] Verificar que los lotes estén correctamente cargados
 - [ ] Confirmar zona horaria y moneda
-- [ ] Configurar duración de ciclos de campo (recomendado: 15 días)
+- [ ] Configurar semanas de ciclos de campo (recomendado: 1 o 2 semanas ISO)
 
 ### Tarde: Equipo Básico
 - [ ] Invitar al menos 1 administrador adicional
@@ -82,8 +82,8 @@ Para cada tipo de trabajo que realizas:
 ### Iniciar Primer Ciclo de Campo
 1. Ve a **Labores → Ciclos de Campo**
 2. Haz clic en **Crear Ciclo**
-3. Selecciona fecha de inicio (hoy)
-4. La fecha de fin se calculará automáticamente
+3. Selecciona la semana de inicio
+4. El ciclo cubre 1 a 4 semanas ISO (lunes–domingo) según la duración preferida de la finca
 5. Agrega labores al ciclo con contratistas y lotes asignados
 
 ---

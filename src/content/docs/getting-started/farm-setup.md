@@ -84,14 +84,14 @@ Navega a **Finca → Configuración** para ajustar los parámetros operativos.
 
 | Parámetro | Descripción | Valor por Defecto |
 |-----------|-------------|-------------------|
-| **Duración de Ciclos de Campo** | Número de días para cada ciclo de trabajo | 15 días |
+| **Semanas de ciclos de campo** | Semanas ISO (lunes–domingo) por ciclo nuevo | 1 semana |
 
-La **duración de ciclos de campo** determina automáticamente la fecha de fin cuando creas un nuevo ciclo. Por ejemplo, si configuras 15 días y creas un ciclo que inicia el 1 de enero, la fecha de fin será automáticamente el 15 de enero.
+La **duración preferida** es de 1 a 4 semanas ISO. Al crear un ciclo eliges la semana de inicio; el sistema llena esas semanas libres (y acorta si una semana posterior está ocupada). Ejemplo: 2 semanas a partir de la semana 33 de 2026 cubre lunes 10 ago – domingo 23 ago, no “15 días corridos desde el 1 de enero”.
 
-:::tip[Ritmos comunes]
-- **15 días**: Ideal para nóminas quincenales o pagos a contratistas cada dos semanas
-- **30 días**: Para planificación operativa mensual
-- **7 días**: Para operaciones que requieren seguimiento semanal intensivo
+:::tip[Ritmos]
+- **1 semana**: seguimiento semanal
+- **2 semanas**: ritmo quincenal de pago a contratistas
+- **3–4 semanas**: planificación operativa más larga
 :::
 
 ### Configuración de Cosecha
@@ -126,7 +126,8 @@ Cada módulo tiene su propia configuración inicial:
 - Crear catálogo de insumos
 
 ### Cosecha
-- Registrar vehículos con peso vacío
+- Elegir flujos de entrada (con vehículo, sin vehículo, o ambos)
+- Registrar vehículos con peso vacío si usas el flujo con vehículo
 - Definir unidades de cosecha (canastas, guacales)
 - Crear grupos de cosecha
 
@@ -139,7 +140,7 @@ Antes de comenzar a operar, verifica que tengas:
 - [ ] Al menos un lote configurado con área
 - [ ] Zona horaria correcta para tu ubicación
 - [ ] Moneda configurada para reportes financieros
-- [ ] Duración de ciclos de campo definida según tu ritmo de pago
+- [ ] Duración de ciclos de campo definida (1–4 semanas ISO) según tu ritmo de pago
 
 ---
 

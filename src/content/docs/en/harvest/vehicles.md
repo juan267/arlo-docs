@@ -3,7 +3,7 @@ title: Vehicles
 description: Learn how to manage the vehicles used for harvest transportation.
 ---
 
-**Vehicles** are the primary assets used to transport harvested crops from the lots to the weighing station. Registering your vehicles accurately is crucial because the system uses their "empty weight" (tare) to calculate the net weight of each harvest entry.
+**Vehicles** belong to the **with-vehicle** harvest entry flow. Empty weight (tare) is used to calculate net weight. If the farm uses **without-vehicle** only, you do not need vehicles to record harvest.
 
 ---
 

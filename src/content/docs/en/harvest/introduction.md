@@ -42,10 +42,10 @@ This is your **ideal plan** before work begins:
 
 ### Actual Harvest
 
-This is **reality** captured at the scale:
-- Weights recorded in harvest entries
+This is **reality** from each harvest entry:
+- Weights recorded in harvest entries (with vehicle or without)
 - Automatically aggregated by date/lot/group
-- Net weight calculated (gross weight - vehicle weight)
+- Net weight from the flow: scale minus tare, or unit capacity × quantity
 
 ### Performance Indicators
 
@@ -74,7 +74,7 @@ This is **reality** captured at the scale:
 |-----------|---------|
 | **Harvest Cycles** | Planning periods with defined dates |
 | **Scheduling** | Yield plans by date/lot/group |
-| **Harvest Entries** | Scale weight recording |
+| **Harvest Entries** | Net weight recording (with vehicle or without) |
 
 ### Analysis
 
@@ -108,18 +108,24 @@ Instead of planning the entire season at once, 1-4 week cycles allow:
 
 ### Net weight calculation
 
-When you record a harvest entry:
+**With vehicle:**
 
 ```
 net_weight = scale_weight - vehicle_empty_weight
 ```
 
-Vehicle empty weight is obtained from:
-1. The vehicle's record (if configured)
-2. The last entry from the same day for that vehicle (weight memory)
+Empty weight comes from the vehicle record or the last same-day entry for that vehicle (weight memory).
 
-:::tip[Weight memory]
-If a vehicle already weighed empty that day, the system remembers the weight and automatically applies it to subsequent entries for the same vehicle.
+**Without vehicle:**
+
+```
+net_weight = harvest_unit_capacity × quantity
+```
+
+You can override net weight if a unit was not full.
+
+:::tip[Weight memory (with vehicle only)]
+If a vehicle already weighed empty that day, the system remembers the weight and applies it to later entries for the same vehicle.
 :::
 
 ### Actual harvest aggregation
@@ -145,7 +151,7 @@ If percentage > 105% → Above target (blue)
 
 ## Next Steps
 
-1. **[Register vehicles](/en/harvest/vehicles/)** - With empty weights for automatic calculation
-2. **[Define harvest units](/en/harvest/units/)** - Containers and their capacities
-3. **[Create harvest groups](/en/harvest/groups/)** - Teams that will execute work
+1. **[Define harvest units](/en/harvest/units/)** - Containers and their capacities
+2. **[Create harvest groups](/en/harvest/groups/)** - Teams that will execute work
+3. **[Choose entry flows](/en/harvest/entries/)** - With vehicle and/or without (register vehicles only if you use with-vehicle)
 4. **[Configure your first cycle](/en/harvest/cycles/)** - Start planning

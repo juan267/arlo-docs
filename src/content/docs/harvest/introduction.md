@@ -42,10 +42,10 @@ Es tu **plan ideal** antes de que comience el trabajo:
 
 ### Cosecha Real
 
-Es la **realidad** capturada en báscula:
-- Pesos registrados en entradas de cosecha
+Es la **realidad** capturada en cada entrada:
+- Pesos registrados en entradas de cosecha (con vehículo o sin vehículo)
 - Agregados automáticamente por fecha/lote/grupo
-- Peso neto calculado (peso bruto - peso vehículo)
+- Peso neto según el flujo: báscula menos tara, o capacidad de unidad × cantidad
 
 ### Indicadores de Desempeño
 
@@ -74,7 +74,7 @@ Es la **realidad** capturada en báscula:
 |------------|-----------|
 | **Ciclos de Cosecha** | Períodos de planificación con fechas definidas |
 | **Programación** | Planes de rendimiento por fecha/lote/grupo |
-| **Entradas de Cosecha** | Registro de pesos de báscula |
+| **Entradas de Cosecha** | Registro de peso neto (con vehículo o sin vehículo) |
 
 ### Análisis
 
@@ -109,9 +109,8 @@ En lugar de planificar toda la temporada de una vez, los ciclos de 1-4 semanas p
 ### Planificación (Inicio del Ciclo)
 
 ```
-1. Crear ciclo con código de referencia (ej. "H-2025-01")
-2. Definir fecha de inicio y fin
-3. Programar cosechas esperadas:
+1. Crear ciclo (semana de inicio; 1–4 semanas ISO, serial sugerido p. ej. HC-2026-SEM-33)
+2. Programar cosechas esperadas:
    - Seleccionar fecha
    - Seleccionar lote
    - Seleccionar grupo
@@ -121,10 +120,7 @@ En lugar de planificar toda la temporada de una vez, los ciclos de 1-4 semanas p
 ### Ejecución (Durante el Ciclo)
 
 ```
-4. Registrar entradas de cosecha:
-   - Seleccionar vehículo
-   - Registrar peso de báscula
-   - Sistema calcula peso neto automáticamente
+4. Registrar entradas de cosecha (con vehículo o sin vehículo, según la configuración de la finca)
 5. Monitorear dashboard de desempeño
 6. Identificar lotes/grupos bajo meta
 ```
@@ -144,17 +140,23 @@ En lugar de planificar toda la temporada de una vez, los ciclos de 1-4 semanas p
 
 ### Cálculo de peso neto
 
-Cuando registras una entrada de cosecha:
+**Con vehículo:**
 
 ```
 peso_neto = peso_bascula - peso_vacio_vehiculo
 ```
 
-El peso vacío del vehículo se obtiene:
-1. Del registro del vehículo (si está configurado)
-2. De la última entrada del mismo día para ese vehículo (memoria de peso)
+El peso vacío se obtiene del registro del vehículo o de la última entrada del mismo día para ese vehículo (memoria de peso).
 
-:::tip[Memoria de peso]
+**Sin vehículo:**
+
+```
+peso_neto = capacidad_unidad_cosecha × cantidad
+```
+
+Puede sobrescribir el peso neto si una unidad no estuvo llena.
+
+:::tip[Memoria de peso (solo con vehículo)]
 Si un vehículo ya pesó vacío ese día, el sistema recuerda el peso y lo aplica automáticamente a las siguientes entradas del mismo vehículo.
 :::
 
@@ -205,7 +207,7 @@ Cuando un lote está consistentemente bajo meta:
 
 ## Próximos Pasos
 
-1. **[Registra vehículos](/harvest/vehicles/)** - Con pesos vacíos para cálculo automático
-2. **[Define unidades de cosecha](/harvest/units/)** - Contenedores y sus capacidades
-3. **[Crea grupos de cosecha](/harvest/groups/)** - Equipos que ejecutarán el trabajo
+1. **[Define unidades de cosecha](/harvest/units/)** - Contenedores y sus capacidades
+2. **[Crea grupos de cosecha](/harvest/groups/)** - Equipos que ejecutarán el trabajo
+3. **[Elige los flujos de entrada](/harvest/entries/)** - Con vehículo y/o sin vehículo (registra vehículos solo si usas con vehículo)
 4. **[Configura tu primer ciclo](/harvest/cycles/)** - Comienza a planificar

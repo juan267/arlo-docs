@@ -62,7 +62,7 @@ Once created, you'll be redirected to the new farm's **Lots** page, where you ca
 :::tip[Initial setup]
 After creating lots, remember to visit **Settings** to adjust:
 
-- Field cycle duration
+- Field cycle length (ISO weeks)
 - Currency for financial reports
 - Other farm-specific options
   :::

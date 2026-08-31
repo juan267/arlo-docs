@@ -9,13 +9,15 @@ Los **Ciclos de Campo** son el núcleo de la planificación operativa. Te permit
 
 ## 1. Comprender la Duración del Ciclo
 
-Cada finca tiene un ritmo preferido para gestionar y pagar el trabajo. Puedes configurar la duración estándar de tus ciclos en **Finca → Configuración → Configuración de Labores**.
+Cada finca tiene un ritmo preferido de **1 a 4 semanas ISO** (lunes–domingo). Configúralo en **Finca → Configuración → Configuración de Labores**.
 
-- **¿Por qué configurar esto?** Cuando creas un nuevo ciclo y seleccionas una **Fecha de Inicio**, el sistema calcula automáticamente la **Fecha de Fin** basada en esta configuración.
-- **Ritmos comunes:**
-  - **15 Días:** Común para nóminas quincenales o pagos a contratistas.
-  - **30 Días:** Planificación operativa mensual.
-  - **Personalizado:** Algunas fincas usan ventanas más cortas o largas dependiendo de la temporada.
+- **¿Por qué configurar esto?** Cuando creas un nuevo ciclo, eliges la **semana de inicio**. El sistema llena esa cantidad de semanas libres y acorta el ciclo si una semana posterior ya está ocupada.
+- **Ritmos:**
+  - **1 semana:** seguimiento semanal.
+  - **2 semanas:** ritmo quincenal de pago a contratistas.
+  - **3–4 semanas:** planificación operativa más larga.
+
+Los ciclos nuevos no se miden en 15 o 30 días corridos. El serial se sugiere desde las semanas elegidas (por ejemplo `FC-2026-SEM-33`). Pueden existir ciclos antiguos con otras duraciones.
 
 ---
 

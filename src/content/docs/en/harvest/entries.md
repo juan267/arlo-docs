@@ -3,47 +3,50 @@ title: Harvest Entries
 description: Record the actual harvest data as it arrives from the field.
 ---
 
-**Harvest Entries** are the core records of your daily harvest operations. They capture the specific details of each delivery from the field to the weighing station, including weight, units, and the team responsible.
+**Harvest Entries** are the core records of daily harvest: time, lot, group, unit count, and net weight.
+
+The farm enables one or both flows in **Harvest → Harvest entry configuration**:
+
+- **With vehicle:** net weight = scale weight minus empty vehicle weight.
+- **Without vehicle:** net weight = harvest unit capacity × quantity (overridable if a unit was not full).
+
+If both are on, pick the flow when creating an entry.
 
 ---
 
 ## 1. Requirements Before Starting
 
-Before you can create a Harvest Entry, ensure the following are set up:
+Both flows need **harvest groups**, **lots**, and **harvest units**.
 
-1.  **Vehicles:** To track transportation and handle empty weights.
-2.  **Harvest Groups:** To identify which team performed the work.
-3.  **Lots:** To know exactly where the crop was harvested.
-4.  **Harvest Units:** (Indirectly used to validate counts and calculate averages).
+The **with-vehicle** flow also needs **vehicles** with empty weight. The **without-vehicle** flow does not.
 
 ---
 
 ## 2. Field Meanings
 
-When adding a Harvest Entry (**Harvest → Harvest Entries → Add Harvest Entry**), you will encounter the following fields:
+Path: **Harvest → Harvest Entries → Add Harvest Entry**. Use the form your farm shows.
 
-### Basic Information
+### Shared
 
-- **Entry Time:** The exact date and time the harvest was recorded.
-- **Vehicle:** Select the vehicle that delivered the crop.
-- **Lot:** Select the specific lot where the harvest took place.
-- **Harvest Group:** Select the team that did the harvesting.
+- **Entry Time:** When the harvest was recorded.
+- **Lot:** Where the crop was harvested.
+- **Harvest Group:** Which team did the work.
+- **Harvest Units:** Number of containers (crates, bins, etc.).
+- **Scale Ticket Code** and **Field Statement Code:** Optional tracking.
 
-### Weight & Units
+### With vehicle
 
-- **Harvest Units:** The total number of containers (crates, bins, etc.) in this delivery.
-- **Scale Weight:** The total weight shown on the scale (Vehicle + Crop).
-- **Empty Vehicle Weight:** The weight of the vehicle alone (Tare).
-  :::tip[Smart Suggestion]
-  The system remembers the empty weight of a vehicle for the current day. If this is the second trip for the same truck today, it will suggest the previous empty weight automatically.
-  :::
-- **Net Weight:** (Calculated) Scale Weight minus Empty Vehicle Weight.
-- **Average Unit Weight:** (Calculated) Net Weight divided by Harvest Units.
+- **Vehicle:** The vehicle that delivered the crop.
+- **Scale Weight:** Total weight (vehicle + crop).
+- **Empty Vehicle Weight:** Tare. The system remembers a vehicle's empty weight for the current day and suggests it on later trips.
+- **Net Weight:** Scale weight minus empty vehicle weight.
 
-### Tracking & Codes
+### Without vehicle
 
-- **Scale Ticket Code:** The reference number from your physical scale printer.
-- **Field Statement Code:** Your internal tracking or harvest voucher number.
+- **Harvest Unit:** Container with a known capacity. Net weight is capacity × quantity.
+- **Net Weight:** Calculated; override it if a unit was not full.
+
+**Average unit weight** (when it applies): net weight divided by unit count.
 
 ---
 

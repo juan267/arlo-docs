@@ -3,47 +3,50 @@ title: Entradas de Cosecha
 description: Registre los datos reales de la cosecha a medida que llegan del campo.
 ---
 
-Las **Entradas de Cosecha** son los registros centrales de sus operaciones diarias de cosecha. Capturan los detalles específicos de cada entrega desde el lote hasta la estación de pesaje, incluyendo el peso, las unidades y el equipo responsable.
+Las **Entradas de Cosecha** son los registros centrales de sus operaciones diarias de cosecha: hora, lote, grupo, unidades y peso neto.
+
+La finca habilita uno o ambos flujos en **Cosecha → Configuración de entradas de cosecha**:
+
+- **Con vehículo:** peso neto = peso en báscula menos peso vacío del vehículo.
+- **Sin vehículo:** peso neto = capacidad de la unidad de cosecha × cantidad (puede sobrescribirlo si una unidad no estuvo llena).
+
+Si ambos están activos, al crear una entrada elija el flujo.
 
 ---
 
 ## 1. Requisitos antes de comenzar
 
-Antes de poder crear una Entrada de Cosecha, asegúrese de tener configurado lo siguiente:
+En ambos flujos necesita **grupos de cosecha**, **lotes** y **unidades de cosecha**.
 
-1.  **Vehículos:** Para rastrear el transporte y gestionar los pesos vacíos.
-2.  **Grupos de Cosecha:** Para identificar qué equipo realizó el trabajo.
-3.  **Lotes:** Para saber exactamente dónde se cosechó el cultivo.
-4.  **Unidades de Cosecha:** (Utilizadas indirectamente para validar conteos y calcular promedios).
+El flujo **con vehículo** también requiere **vehículos** con peso vacío. El flujo **sin vehículo** no.
 
 ---
 
 ## 2. Significado de los campos
 
-Al agregar una Entrada de Cosecha (**Cosecha → Entradas de Cosecha → Agregar Entrada de Cosecha**), encontrará los siguientes campos:
+Ruta: **Cosecha → Entradas de Cosecha → Agregar Entrada de Cosecha**. Use el formulario que muestre su finca.
 
-### Información Básica
+### Común a ambos flujos
 
-- **Hora de Entrada:** La fecha y hora exacta en que se registró la cosecha.
-- **Vehículo:** Seleccione el vehículo que entregó el cultivo.
-- **Lote:** Seleccione el lote específico donde se realizó la cosecha.
-- **Grupo de Cosecha:** Seleccione el equipo que realizó la cosecha.
+- **Hora de Entrada:** La fecha y hora en que se registró la cosecha.
+- **Lote:** El lote donde se cosechó.
+- **Grupo de Cosecha:** El equipo que realizó el trabajo.
+- **Unidades de Cosecha:** Número de contenedores (canastillas, bines, etc.).
+- **Código Ticket de Báscula** y **Código de Planilla de Campo:** Opcionales, para seguimiento.
 
-### Peso y Unidades
+### Con vehículo
 
-- **Unidades de Cosecha:** El número total de contenedores (canastillas, bines, etc.) en esta entrega.
-- **Peso en Báscula:** El peso total mostrado en la báscula (Vehículo + Cultivo).
-- **Peso Vehículo Vacío:** El peso del vehículo solo (Tara).
-  :::tip[Sugerencia Inteligente]
-  El sistema recuerda el peso vacío de un vehículo para el día actual. Si este es el segundo viaje del mismo camión hoy, sugerirá automáticamente el peso vacío anterior.
-  :::
-- **Peso Neto:** (Calculado) Peso en Báscula menos Peso Vehículo Vacío.
-- **Peso Promedio por Unidad:** (Calculado) Peso Neto dividido por Unidades de Cosecha.
+- **Vehículo:** El vehículo que entregó el cultivo.
+- **Peso en Báscula:** Peso total (vehículo + cultivo).
+- **Peso Vehículo Vacío:** Tara. El sistema recuerda el peso vacío de un vehículo para el día actual y lo sugiere en viajes siguientes.
+- **Peso Neto:** Peso en báscula menos peso vacío.
 
-### Seguimiento y Códigos
+### Sin vehículo
 
-- **Código Ticket de Báscula:** El número de referencia de su impresora física de la báscula.
-- **Código de Planilla de Campo:** Su número interno de seguimiento o vale de cosecha.
+- **Unidad de Cosecha:** Contenedor con capacidad conocida. El peso neto se calcula como capacidad × cantidad.
+- **Peso Neto:** Calculado; puede sobrescribirlo si una unidad no estuvo llena.
+
+**Peso promedio por unidad** (cuando aplica): peso neto dividido por unidades.
 
 ---
 

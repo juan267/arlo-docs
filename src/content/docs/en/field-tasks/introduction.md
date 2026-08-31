@@ -18,7 +18,7 @@ On agricultural farms, labor typically represents 40-60% of operating costs. How
 
 ### The Cycles Approach
 
-Arlo organizes work into **Field Cycles** - short periods (typically 15 days) where:
+Arlo organizes work into **Field Cycles** - periods of **1 to 4 ISO weeks** (Monday–Sunday) where:
 
 1. **You plan** what work will be done and how much it will cost
 2. **You execute** by logging completed work day by day
@@ -35,8 +35,8 @@ This rhythm of short cycles is similar to "sprints" in software development: bou
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│ FIELD CYCLE: FC-JAN-1-2025                             │
-│ Start: Jan 1, 2025  │  End: Jan 15, 2025              │
+│ FIELD CYCLE: FC-2026-W-33                              │
+│ Start: Mon 10 Aug 2026  │  End: Sun 16 Aug 2026       │
 ├─────────────────────────────────────────────────────────┤
 │ TASK 1: Pruning - North Lot - Contractor Garcia        │
 │   Budget: 500 trees × $2.00 = $1,000                  │
@@ -59,9 +59,9 @@ This rhythm of short cycles is similar to "sprints" in software development: bou
 
 | Component | Description |
 |-----------|-------------|
-| **Serial** | Automatically generated unique identifier (FC-MON-#-YEAR) |
-| **Start date** | First day of the cycle |
-| **End date** | Automatically calculated based on configured duration |
+| **Serial** | Unique identifier suggested from the ISO weeks (FC-2026-W-33) |
+| **Start week** | Monday of the first week of the cycle |
+| **End** | Sunday of the last week (1–4 weeks, shortened if a later week is occupied) |
 | **Tasks** | Work lines with contractor, task, lot, and budget |
 | **Logs** | Daily records of completed work |
 
@@ -88,18 +88,18 @@ There's a 5-day grace period for logging late entries. After this period, logs f
 
 ## Cycle Duration Configuration
 
-Cycle duration is configured at the farm level in **Farm → Settings → Field Tasks Settings**.
+Preferred length is set at the farm in **Farm → Settings → Field Tasks Settings**: **1 to 4 ISO weeks** (Monday–Sunday).
 
-| Duration | Use Case |
-|----------|----------|
-| **7 days** | Intensive operations requiring weekly tracking |
-| **15 days** | Ideal for bi-weekly payroll (most common) |
-| **30 days** | Monthly planning for stable operations |
+| Weeks | Use case |
+|-------|----------|
+| **1** | Weekly tracking |
+| **2** | Bi-weekly contractor payment rhythm |
+| **3–4** | Longer operational planning |
 
 When you create a new cycle:
-1. You select the start date
-2. The system automatically calculates the end date
-3. A unique serial is generated (e.g., FC-JAN-1-2025)
+1. You select the start week
+2. The system fills that many free weeks (and shortens if a later week is occupied)
+3. A serial is suggested (e.g. FC-2026-W-33)
 
 ---
 

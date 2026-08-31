@@ -13,9 +13,9 @@ This guide walks you through the complete harvest workflow, from initial setup t
 
 Before harvesting starts, define your assets:
 
-1.  **Vehicles:** Register trucks/tractors and their empty weights.
+1.  **Units:** Define your containers (e.g., "25kg Crates").
 2.  **Groups:** Organize pickers into teams (e.g., "Team Alpha", "Contractors").
-3.  **Units:** Define your containers (e.g., "25kg Crates").
+3.  **Entry flows:** In configuration, enable with vehicle, without vehicle, or both. Register vehicles with empty weight only if you use the with-vehicle flow.
 
 ### Phase 2: Planning (The Target)
 
@@ -26,11 +26,11 @@ Create a **Harvest Cycle** and fill the **Harvest Schedule**. This sets the "Exp
 
 ### Phase 3: Execution (The Reality)
 
-As trucks arrive from the field:
+As harvest arrives from the field:
 
 1.  Go to **Harvest Entries**.
-2.  Record the total scale weight and the number of units.
-3.  The system automatically calculates the net weight and updates the **Harvest Actuals**.
+2.  Use the form your farm shows: with vehicle (scale and tare) or without vehicle (capacity × quantity).
+3.  The system stores net weight and updates the **Harvest Actuals**.
 
 ### Phase 4: Monitoring (The Adjustment)
 

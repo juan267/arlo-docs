@@ -9,13 +9,15 @@ description: Master the management of work cycles, from planning and budgeting t
 
 ## 1. Understanding Cycle Duration
 
-Every farm has a preferred rhythm for managing and paying for work. You can configure the standard duration of your cycles in **Farm → Configuration → Field Task Configuration**.
+Every farm has a preferred rhythm of **1 to 4 ISO weeks** (Monday–Sunday). Set it in **Farm → Configuration → Field Task Configuration**.
 
-- **Why configure this?** When you create a new cycle and select a **Start Date**, the system automatically calculates the **End Date** based on this configuration.
-- **Common rhythms:**
-  - **15 Days:** Common for bi-weekly payroll or contractor payments.
-  - **30 Days:** Monthly operational planning.
-  - **Custom:** Some farms use shorter or longer windows depending on the season.
+- **Why configure this?** When you create a new cycle, you pick the **start week**. The system fills that many free weeks and shortens the cycle if a later week is already occupied.
+- **Rhythms:**
+  - **1 week:** weekly tracking.
+  - **2 weeks:** bi-weekly contractor payment rhythm.
+  - **3–4 weeks:** longer operational planning.
+
+New cycles are not 15- or 30-day spans. The serial is suggested from the selected weeks (for example `FC-2026-W-33`). Legacy cycles with other durations may still exist.
 
 ---
 

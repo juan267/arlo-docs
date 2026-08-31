@@ -12,7 +12,7 @@ This guide takes you day by day through key activities to get Arlo running on yo
 ### Morning: Farm Setup
 - [ ] Verify lots are correctly loaded
 - [ ] Confirm timezone and currency
-- [ ] Set field cycle duration (recommended: 15 days)
+- [ ] Set field cycle length (recommended: 1 or 2 ISO weeks)
 
 ### Afternoon: Basic Team
 - [ ] Invite at least 1 additional administrator
@@ -82,8 +82,8 @@ For each type of work you perform:
 ### Start First Field Cycle
 1. Go to **Field Tasks → Field Cycles**
 2. Click **Create Cycle**
-3. Select start date (today)
-4. End date will be calculated automatically
+3. Select the start week
+4. The cycle covers 1 to 4 ISO weeks (Monday–Sunday) at the farm’s preferred length
 5. Add tasks to the cycle with assigned contractors and lots
 
 ---

@@ -62,7 +62,7 @@ Una vez creada, serás redirigido a la página de **Lotes** de la nueva finca, d
 :::tip[Configuración inicial]
 Después de crear los lotes, recuerda visitar **Configuración** para ajustar:
 
-- Duración de ciclos de campo
+- Semanas de ciclos de campo
 - Moneda para reportes financieros
 - Otras opciones específicas de la finca
   :::

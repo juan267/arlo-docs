@@ -3,7 +3,7 @@ title: Harvest Cycles
 description: Plan and monitor your harvest periods with calendars and performance tracking.
 ---
 
-A **Harvest Cycle** is a container for a specific harvest period (e.g., "Summer 2024", "Q3 Harvest", or "Main Season"). It allows you to organize your schedules, track actual results, and manage shipments within a defined timeframe.
+A **Harvest Cycle** groups schedules, actuals, shipments, and pricing over **1 to 4 ISO weeks** (Monday–Sunday). It is not a free-form season with loose start and end dates.
 
 ---
 
@@ -11,14 +11,15 @@ A **Harvest Cycle** is a container for a specific harvest period (e.g., "Summer 
 
 Navigate to **Harvest → Harvest Cycles** and click **Add Harvest Cycle**.
 
+Preferred length (1–4 weeks) is set in **Harvest → Harvest entry configuration** (or when you save a cycle, if you can edit farm configuration).
+
 ### Fields
 
-- **Reference Code:** A unique name for the period (e.g., "H-2024-01").
-- **Start Date:** The day the harvest operations begin.
-- **End Date:** The day the harvest operations conclude.
+- **Start week:** Pick the Monday of the first week. The system fills the following free weeks at the preferred length and shortens the cycle if a later week is already occupied.
+- **Reference code:** Suggested from the selected weeks (for example `HC-2026-W-33`). You can edit it.
 
 :::note[Date Integrity]
-The system prevents overlapping harvest cycles to ensure data consistency. You also cannot delete a cycle if it already has planned schedules or has already passed its end date.
+Harvest cycles do not overlap. You cannot delete a cycle that already has planned schedules or whose end date has passed. Legacy cycles that are not ISO weeks may still exist.
 :::
 
 ---
@@ -66,7 +67,7 @@ The Harvest Cycle "Show" page (`/farms/X/harvest_cycles/Y`) provides real-time i
 ### Harvest Schedule vs. Harvest Actual
 
 - **Schedule:** Your "Ideal" plan created before the work starts.
-- **Actual:** The "Reality" calculated automatically from the scale weights recorded in **Harvest Entries**.
+- **Actual:** The "Reality" calculated automatically from the net weights recorded in **Harvest Entries**.
 
 The system links them by **Date, Lot, and Harvest Group** to calculate the variance and performance percentage.
 

@@ -18,7 +18,7 @@ En fincas agrícolas, la mano de obra suele representar 40-60% de los costos ope
 
 ### El enfoque de ciclos
 
-Arlo organiza el trabajo en **Ciclos de Campo** - períodos cortos (típicamente 15 días) donde:
+Arlo organiza el trabajo en **Ciclos de Campo** - períodos de **1 a 4 semanas ISO** (lunes–domingo) donde:
 
 1. **Planificas** qué trabajo se hará y cuánto costará
 2. **Ejecutas** registrando el trabajo completado día a día
@@ -35,8 +35,8 @@ Este ritmo de ciclos cortos es similar a los "sprints" en desarrollo de software
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│ CICLO DE CAMPO: FC-ENE-1-2025                          │
-│ Inicio: 1 Ene 2025  │  Fin: 15 Ene 2025               │
+│ CICLO DE CAMPO: FC-2026-SEM-33                          │
+│ Inicio: lun 10 ago 2026  │  Fin: dom 16 ago 2026      │
 ├─────────────────────────────────────────────────────────┤
 │ LABOR 1: Poda - Lote Norte - Contratista García        │
 │   Presupuesto: 500 árboles × $2.00 = $1,000           │
@@ -59,9 +59,9 @@ Este ritmo de ciclos cortos es similar a los "sprints" en desarrollo de software
 
 | Componente | Descripción |
 |------------|-------------|
-| **Serial** | Identificador único generado automáticamente (FC-MES-#-AÑO) |
-| **Fecha de inicio** | Primer día del ciclo |
-| **Fecha de fin** | Calculada automáticamente según duración configurada |
+| **Serial** | Identificador único sugerido desde las semanas ISO (FC-2026-SEM-33) |
+| **Semana de inicio** | Lunes de la primera semana del ciclo |
+| **Fin** | Domingo de la última semana (1–4 semanas, se acorta si hay solape) |
 | **Labores** | Líneas de trabajo con contratista, tarea, lote y presupuesto |
 | **Logs** | Registros diarios de trabajo completado |
 
@@ -104,18 +104,18 @@ Existe un período de gracia de 5 días para registrar logs atrasados. Después 
 
 ## Configuración de Duración de Ciclos
 
-La duración de los ciclos se configura a nivel de finca en **Finca → Configuración → Configuración de Labores**.
+La duración preferida se configura en **Finca → Configuración → Configuración de Labores**: **1 a 4 semanas ISO** (lunes–domingo).
 
-| Duración | Caso de Uso |
-|----------|-------------|
-| **7 días** | Operaciones intensivas que requieren seguimiento semanal |
-| **15 días** | Ideal para nóminas quincenales (más común) |
-| **30 días** | Planificación mensual para operaciones estables |
+| Semanas | Caso de uso |
+|---------|-------------|
+| **1** | Seguimiento semanal |
+| **2** | Ritmo quincenal de pago a contratistas |
+| **3–4** | Planificación operativa más larga |
 
 Cuando creas un nuevo ciclo:
-1. Seleccionas la fecha de inicio
-2. El sistema calcula automáticamente la fecha de fin
-3. Se genera un serial único (ej. FC-ENE-1-2025)
+1. Seleccionas la semana de inicio
+2. El sistema llena esa cantidad de semanas libres (y acorta si una semana posterior está ocupada)
+3. Se sugiere un serial (ej. FC-2026-SEM-33)
 
 ---
 

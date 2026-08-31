@@ -3,7 +3,7 @@ title: Vehículos
 description: Aprenda a gestionar los vehículos utilizados para el transporte de la cosecha.
 ---
 
-Los **Vehículos** son los activos principales utilizados para transportar los cultivos cosechados desde los lotes hasta la estación de pesaje. Registrar sus vehículos con precisión es crucial porque el sistema utiliza su "peso vacío" (tara) para calcular el peso neto de cada entrada de cosecha.
+Los **Vehículos** se usan en el flujo de entrada **con vehículo**. El sistema usa el peso vacío (tara) para calcular el peso neto. Si su finca solo usa **sin vehículo**, no necesita registrar vehículos para ingresar cosecha.
 
 ---
 

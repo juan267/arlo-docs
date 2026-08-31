@@ -13,9 +13,9 @@ Esta guía le muestra el flujo de trabajo completo de la cosecha, desde la confi
 
 Antes de que comience la cosecha, defina sus activos:
 
-1.  **Vehículos:** Registre camiones/tractores y sus pesos vacíos.
+1.  **Unidades:** Defina sus contenedores (ej. "Canastillas de 25kg").
 2.  **Grupos:** Organice a los cosechadores en equipos (ej. "Equipo Alfa", "Contratistas").
-3.  **Unidades:** Defina sus contenedores (ej. "Canastillas de 25kg").
+3.  **Flujos de entrada:** En configuración, active con vehículo, sin vehículo, o ambos. Registre vehículos con peso vacío solo si usa el flujo con vehículo.
 
 ### Fase 2: Planificación (La Meta)
 
@@ -26,11 +26,11 @@ Cree un **Ciclo de Cosecha** y complete el **Programa de Cosecha**. Esto estable
 
 ### Fase 3: Ejecución (La Realidad)
 
-A medida que los camiones llegan del campo:
+A medida que llega cosecha del campo:
 
 1.  Vaya a **Entradas de Cosecha**.
-2.  Registre el peso total de la báscula y el número de unidades.
-3.  El sistema calcula automáticamente el peso neto y construye la **Cosecha Real**.
+2.  Use el formulario de su finca: con vehículo (báscula y tara) o sin vehículo (capacidad × cantidad).
+3.  El sistema guarda el peso neto y construye la **Cosecha Real**.
 
 ### Fase 4: Monitoreo (El Ajuste)
 

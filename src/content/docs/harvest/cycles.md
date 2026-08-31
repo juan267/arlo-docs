@@ -3,7 +3,7 @@ title: Ciclos de Cosecha
 description: Planifique y monitoree sus períodos de cosecha con calendarios y seguimiento del rendimiento.
 ---
 
-Un **Ciclo de Cosecha** es un contenedor para un período de cosecha específico (ej. "Verano 2024", "Cosecha Q3" o "Temporada Principal"). Le permite organizar sus programas, realizar un seguimiento de los resultados reales y gestionar los envíos dentro de un marco de tiempo definido.
+Un **Ciclo de Cosecha** agrupa programación, reales, envíos y precios en un tramo de **1 a 4 semanas ISO** (lunes–domingo). No es una temporada libre con fechas sueltas.
 
 ---
 
@@ -11,14 +11,15 @@ Un **Ciclo de Cosecha** es un contenedor para un período de cosecha específico
 
 Navegue a **Cosecha → Ciclos de Cosecha** y haga clic en **Agregar Ciclo de Cosecha**.
 
+La duración preferida (1–4 semanas) se configura en **Cosecha → Configuración de entradas de cosecha** (o al guardar un ciclo, si puede editar la configuración de la finca).
+
 ### Campos
 
-- **Código de Referencia:** Un nombre único para el período (ej. "H-2024-01").
-- **Fecha de Inicio:** El día en que comienzan las operaciones de cosecha.
-- **Fecha de Finalización:** El día en que concluyen las operaciones de cosecha.
+- **Semana de inicio:** Elige el lunes de la primera semana. El sistema llena las semanas libres siguientes según la duración preferida y acorta el ciclo si una semana posterior ya está ocupada.
+- **Código de referencia:** Se sugiere desde las semanas (por ejemplo `HC-2026-SEM-33`). Puede editarlo.
 
 :::note[Integridad de Fechas]
-El sistema evita la superposición de ciclos de cosecha para asegurar la consistencia de los datos. Además, no puede eliminar un ciclo si ya tiene programas planificados o si ya ha pasado su fecha de finalización.
+Los ciclos de cosecha no se superponen. No puede eliminar un ciclo si ya tiene programas planificados o si ya ha pasado su fecha de finalización. Pueden existir ciclos antiguos que no siguen semanas ISO.
 :::
 
 ---
@@ -66,7 +67,7 @@ La página de "Detalles" del Ciclo de Cosecha proporciona información en tiempo
 ### Programa de Cosecha vs. Cosecha Real
 
 - **Programa:** Su plan "Ideal" creado antes de que comience el trabajo.
-- **Real:** La "Realidad" calculada automáticamente a partir de los pesos de la báscula registrados en las **Entradas de Cosecha**.
+- **Real:** La "Realidad" calculada automáticamente a partir de los pesos netos registrados en las **Entradas de Cosecha**.
 
 El sistema los vincula por **Fecha, Lote y Grupo de Cosecha** para calcular la varianza y el porcentaje de rendimiento.
 
