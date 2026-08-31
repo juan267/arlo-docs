@@ -10,11 +10,13 @@ Esta guía te lleva día a día a través de las actividades clave para poner en
 ## Día 1: Fundamentos
 
 ### Mañana: Configuración de Finca
+
 - [ ] Verificar que los lotes estén correctamente cargados
 - [ ] Confirmar zona horaria y moneda
 - [ ] Configurar semanas de ciclos de campo (recomendado: 1 o 2 semanas ISO)
 
 ### Tarde: Equipo Básico
+
 - [ ] Invitar al menos 1 administrador adicional
 - [ ] Crear cuentas para los monitores de campo
 - [ ] Compartir credenciales con el equipo
@@ -28,10 +30,12 @@ Antes de invitar usuarios, ten lista una lista con nombres, correos y roles asig
 ## Día 2: Módulo de Sanidad
 
 ### Configuración Inicial
+
 - [ ] Ir a **Sanidad → Monitores** y registrar a tus inspectores
 - [ ] Ir a **Sanidad → Formularios** y crear tu primer formulario de inspección
 
 ### Crear tu Primer Formulario
+
 1. Haz clic en **Agregar Formulario**
 2. Dale un nombre descriptivo (ej. "Monitoreo de Plagas - Cítricos")
 3. Agrega campos para las plagas/enfermedades que quieres monitorear
@@ -40,6 +44,7 @@ Antes de invitar usuarios, ten lista una lista con nombres, correos y roles asig
 **Alternativa rápida:** Usa el **Asistente de IA** para generar un formulario basado en tu cultivo y las plagas más comunes de tu región.
 
 ### Programar Primera Ruta
+
 1. Ve a **Sanidad → Calendario**
 2. Haz clic en una fecha de esta semana
 3. Selecciona el formulario, monitor y lotes a inspeccionar
@@ -50,17 +55,28 @@ Antes de invitar usuarios, ten lista una lista con nombres, correos y roles asig
 ## Día 3: Primera Inspección de Campo
 
 ### Preparación
-- [ ] El monitor descarga la app o accede al lanzador web
+
+Instala Arlo en el teléfono desde el navegador. Arlo es una PWA, no una app de tienda. No está en Play Store ni App Store.
+
+1. Abre https://arloagro.com en el teléfono.
+2. Android: en Chrome, menú → Agregar a la pantalla de inicio.
+3. iPhone: Safari → Compartir → Agregar a pantalla de inicio.
+4. Abre el ícono e inicia sesión. Luego entra al Lanzador de Rutas.
+
+Si no puedes instalar, abre de nuevo https://arloagro.com. No hay ficha en las tiendas.
+
 - [ ] Descargar formularios para trabajo offline
 - [ ] Verificar que el GPS del dispositivo esté activo
 
 ### Ejecución
+
 1. El monitor abre la ruta asignada
 2. Navega a cada lote siguiendo el formulario
 3. Registra observaciones, conteos y fotos
 4. Al terminar, sincroniza los datos
 
 ### Revisión
+
 - [ ] Verificar que la ruta aparezca como "Completada" en el calendario
 - [ ] Revisar los resultados en **Análisis de Rutas**
 - [ ] Leer el resumen de IA para entender los hallazgos principales
@@ -70,16 +86,20 @@ Antes de invitar usuarios, ten lista una lista con nombres, correos y roles asig
 ## Día 4: Módulo de Labores
 
 ### Configuración
+
 - [ ] Ir a **Labores → Contratistas** y registrar tus contratistas
 - [ ] Ir a **Labores → Labores de Campo** y crear el catálogo de tareas
 
 ### Crear Catálogo de Labores
+
 Para cada tipo de trabajo que realizas:
+
 1. Nombre de la labor (ej. "Poda de formación")
 2. Unidad de medida (árboles, metros, hectáreas)
 3. Precio por defecto
 
 ### Iniciar Primer Ciclo de Campo
+
 1. Ve a **Labores → Ciclos de Campo**
 2. Haz clic en **Crear Ciclo**
 3. Selecciona la semana de inicio
@@ -91,6 +111,7 @@ Para cada tipo de trabajo que realizas:
 ## Día 5: Registro de Trabajo
 
 ### Capturar Logs de Ejecución
+
 A medida que el trabajo avanza en campo:
 
 1. Abre el ciclo de campo activo
@@ -99,6 +120,7 @@ A medida que el trabajo avanza en campo:
 4. Registra: fecha, unidades completadas, notas
 
 ### Monitorear Progreso
+
 - El porcentaje de avance se actualiza automáticamente
 - Los estados de las labores cambian según el progreso
 - Compara costo presupuestado vs. real en tiempo real
@@ -108,11 +130,13 @@ A medida que el trabajo avanza en campo:
 ## Día 6: Módulo de Insumos
 
 ### Configuración Básica
+
 - [ ] Ir a **Insumos → Configuración** y crear bodegas
 - [ ] Ir a **Insumos → Proveedores** y registrar proveedores
 - [ ] Ir a **Insumos → Catálogo** y crear items de inventario
 
 ### Registrar Primera Entrada
+
 1. Ve a **Insumos → Entradas**
 2. Haz clic en **Nueva Entrada**
 3. Selecciona proveedor, bodega y producto
@@ -120,6 +144,7 @@ A medida que el trabajo avanza en campo:
 5. Guarda la entrada
 
 ### Registrar Primera Salida
+
 1. Ve a **Insumos → Salidas**
 2. Crea una salida vinculada a una labor de campo (opcional)
 3. Selecciona productos y cantidades
@@ -130,12 +155,14 @@ A medida que el trabajo avanza en campo:
 ## Día 7: Revisión y Siguientes Pasos
 
 ### Verificar que Todo Funcione
+
 - [ ] Al menos una ruta de sanidad completada y analizada
 - [ ] Un ciclo de campo con labores y logs registrados
 - [ ] Inventario con al menos una entrada y una salida
 - [ ] Equipo familiarizado con sus módulos asignados
 
 ### Revisar Primeros Reportes
+
 - **Sanidad:** Ve a Informes Analíticos para ver tendencias
 - **Labores:** Revisa el resumen del ciclo para ver costos
 - **Insumos:** Verifica los saldos de inventario por bodega
@@ -154,23 +181,27 @@ Con los fundamentos en su lugar, la próxima semana enfócate en:
 ## Checklist de Primera Semana
 
 ### Configuración General
+
 - [ ] Finca creada con lotes
 - [ ] Usuarios invitados con roles correctos
 - [ ] Duración de ciclos configurada
 
 ### Sanidad
+
 - [ ] Monitores registrados
 - [ ] Al menos un formulario creado
 - [ ] Una ruta programada y completada
 - [ ] Resultados revisados
 
 ### Labores
+
 - [ ] Contratistas registrados
 - [ ] Catálogo de labores creado
 - [ ] Un ciclo de campo iniciado
 - [ ] Logs de trabajo registrados
 
 ### Insumos
+
 - [ ] Bodegas configuradas
 - [ ] Proveedores registrados
 - [ ] Al menos un producto en catálogo

@@ -10,11 +10,13 @@ This guide takes you day by day through key activities to get Arlo running on yo
 ## Day 1: Foundations
 
 ### Morning: Farm Setup
+
 - [ ] Verify lots are correctly loaded
 - [ ] Confirm timezone and currency
 - [ ] Set field cycle length (recommended: 1 or 2 ISO weeks)
 
 ### Afternoon: Basic Team
+
 - [ ] Invite at least 1 additional administrator
 - [ ] Create accounts for field monitors
 - [ ] Share credentials with the team
@@ -28,10 +30,12 @@ Before inviting users, have a list ready with names, emails, and assigned roles.
 ## Day 2: Sanitation Module
 
 ### Initial Setup
+
 - [ ] Go to **Sanitation → Monitors** and register your inspectors
 - [ ] Go to **Sanitation → Forms** and create your first inspection form
 
 ### Create Your First Form
+
 1. Click **Add Form**
 2. Give it a descriptive name (e.g., "Pest Monitoring - Citrus")
 3. Add fields for the pests/diseases you want to monitor
@@ -40,6 +44,7 @@ Before inviting users, have a list ready with names, emails, and assigned roles.
 **Quick alternative:** Use the **AI Assistant** to generate a form based on your crop and common pests in your region.
 
 ### Schedule First Route
+
 1. Go to **Sanitation → Calendar**
 2. Click on a date this week
 3. Select the form, monitor, and lots to inspect
@@ -50,17 +55,28 @@ Before inviting users, have a list ready with names, emails, and assigned roles.
 ## Day 3: First Field Inspection
 
 ### Preparation
-- [ ] Monitor downloads app or accesses web launcher
+
+Install Arlo on the phone from the browser. Arlo is a PWA, not a store app. It is not on Play Store or App Store.
+
+1. Open https://arloagro.com on the phone.
+2. Android: in Chrome, menu → Add to Home Screen.
+3. iPhone: Safari → Share → Add to Home Screen.
+4. Open the icon and sign in. Then open the Route Launcher.
+
+If install fails, open https://arloagro.com again. There is no store listing.
+
 - [ ] Download forms for offline work
 - [ ] Verify device GPS is active
 
 ### Execution
+
 1. Monitor opens the assigned route
 2. Navigates to each lot following the form
 3. Records observations, counts, and photos
 4. When finished, syncs the data
 
 ### Review
+
 - [ ] Verify route appears as "Completed" in calendar
 - [ ] Review results in **Route Analysis**
 - [ ] Read AI summary to understand main findings
@@ -70,16 +86,20 @@ Before inviting users, have a list ready with names, emails, and assigned roles.
 ## Day 4: Field Tasks Module
 
 ### Setup
+
 - [ ] Go to **Field Tasks → Contractors** and register your contractors
 - [ ] Go to **Field Tasks → Field Tasks** and create the task catalog
 
 ### Create Task Catalog
+
 For each type of work you perform:
+
 1. Task name (e.g., "Formation pruning")
 2. Unit of measure (trees, meters, hectares)
 3. Default price
 
 ### Start First Field Cycle
+
 1. Go to **Field Tasks → Field Cycles**
 2. Click **Create Cycle**
 3. Select the start week
@@ -91,6 +111,7 @@ For each type of work you perform:
 ## Day 5: Work Logging
 
 ### Capture Execution Logs
+
 As work progresses in the field:
 
 1. Open the active field cycle
@@ -99,6 +120,7 @@ As work progresses in the field:
 4. Record: date, completed units, notes
 
 ### Monitor Progress
+
 - Progress percentage updates automatically
 - Task statuses change based on progress
 - Compare budgeted vs. actual cost in real-time
@@ -108,11 +130,13 @@ As work progresses in the field:
 ## Day 6: Supplies Module
 
 ### Basic Setup
+
 - [ ] Go to **Supplies → Configuration** and create warehouses
 - [ ] Go to **Supplies → Providers** and register providers
 - [ ] Go to **Supplies → Catalog** and create inventory items
 
 ### Record First Entry
+
 1. Go to **Supplies → Entries**
 2. Click **New Entry**
 3. Select provider, warehouse, and product
@@ -120,6 +144,7 @@ As work progresses in the field:
 5. Save the entry
 
 ### Record First Exit
+
 1. Go to **Supplies → Exits**
 2. Create an exit linked to a field task (optional)
 3. Select products and quantities
@@ -130,12 +155,14 @@ As work progresses in the field:
 ## Day 7: Review and Next Steps
 
 ### Verify Everything Works
+
 - [ ] At least one sanitation route completed and analyzed
 - [ ] A field cycle with tasks and logged work
 - [ ] Inventory with at least one entry and one exit
 - [ ] Team familiar with their assigned modules
 
 ### Review First Reports
+
 - **Sanitation:** Go to Analytical Reports to see trends
 - **Field Tasks:** Review cycle summary to see costs
 - **Supplies:** Check inventory balances by warehouse
@@ -154,23 +181,27 @@ With foundations in place, next week focus on:
 ## First Week Checklist
 
 ### General Setup
+
 - [ ] Farm created with lots
 - [ ] Users invited with correct roles
 - [ ] Cycle duration configured
 
 ### Sanitation
+
 - [ ] Monitors registered
 - [ ] At least one form created
 - [ ] One route scheduled and completed
 - [ ] Results reviewed
 
 ### Field Tasks
+
 - [ ] Contractors registered
 - [ ] Task catalog created
 - [ ] One field cycle started
 - [ ] Work logs recorded
 
 ### Supplies
+
 - [ ] Warehouses configured
 - [ ] Providers registered
 - [ ] At least one product in catalog
